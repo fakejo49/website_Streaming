@@ -1,13 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Streaming</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Streaming</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    
-    <script src="script.js"></script>
+  <a class="lewati-konten" href="#utama">Lewati ke konten utama</a>
+
+  <header class="header-utama">
+    <div class="isi-header container">
+      <a class="logo" href="index.html">STREAMING</a>
+      <nav class="navigasi" aria-label="Navigasi utama">
+        <ul class="daftar-menu" role="list">
+          <li><a class="link-menu" href="index.html" aria-current="page">Beranda</a></li>
+          <li><a class="link-menu" href="catalog.html">Katalog</a></li>
+          <li><a class="link-menu" href="watch.html">Tonton</a></li>
+          <li><a class="link-menu" href="subscription.html">Langganan</a></li>
+          <li><a class="link-menu" href="login.html">Masuk</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="utama">
+    <section class="hero container" aria-labelledby="judul-hero">
+      <div class="hero-teks">
+        <p class="hero-info info-meta">
+          <span class="item-meta">2025</span>
+          <span class="item-meta">Drama Misteri</span>
+          <span class="item-meta">118 Menit</span>
+        </p>
+        <h1 id="judul-hero" class="hero-judul">Kabut di Perbatasan</h1>
+        <p class="hero-sinopsis">Seorang jurnalis kembali ke kota kecil di lereng gunung untuk menyelidiki arsip berita yang hilang, namun justru menemukan rahasia lama yang mengubah nasib keluarganya.</p>
+        <div class="hero-aksi">
+          <a class="tombol tombol-utama" href="watch.html">Putar</a>
+          <a class="tombol tombol-kedua" href="assets/videos/trailer.mp4">Tonton trailer</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img class="hero-gambar" src="assets/images/hero.jpg" width="1200" height="1500" fetchpriority="high" decoding="async" alt="Seorang jurnalis berdiri di peron stasiun berkabut dalam adegan film Kabut di Perbatasan">
+      </div>
+    </section>
+
+    <section class="bagian-tren container" aria-labelledby="judul-tren">
+      <div class="kepala-bagian">
+        <h2 id="judul-tren" class="judul-bagian">Sedang Tren</h2>
+        <a class="link-semua" href="catalog.html">Lihat semua</a>
+      </div>
+
+      <ol class="grid-poster" role="list">
+        <li class="kartu-poster">
+          <span class="nomor-urut" aria-hidden="true">01</span>
+          <a class="link-poster" href="watch.html">
+            <span class="bingkai-poster">
+              <img class="gambar-poster" src="assets/images/poster-1.jpg" width="600" height="900" decoding="async" alt="">
+            </span>
+            <h3 class="judul-poster">Senja di Pelabuhan Tua</h3>
+            <p class="info-poster info-meta">
+              <span class="item-meta">2025</span>
+              <span class="item-meta">Drama</span>
+            </p>
+          </a>
+        </li>
+
+        <li class="kartu-poster">
+          <span class="nomor-urut" aria-hidden="true">02</span>
+          <a class="link-poster" href="watch.html">
+            <span class="bingkai-poster">
+              <img class="gambar-poster" src="assets/images/poster-2.jpg" width="600" height="900" decoding="async" alt="">
+            </span>
+            <h3 class="judul-poster">Bayang-Bayang Jakarta</h3>
+            <p class="info-poster info-meta">
+              <span class="item-meta">2024</span>
+              <span class="item-meta">Thriller</span>
+            </p>
+          </a>
+        </li>
+
+        <li class="kartu-poster">
+          <span class="nomor-urut" aria-hidden="true">03</span>
+          <a class="link-poster" href="watch.html">
+            <span class="bingkai-poster">
+              <img class="gambar-poster" src="assets/images/poster-3.jpg" width="600" height="900" loading="lazy" decoding="async" alt="">
+            </span>
+            <h3 class="judul-poster">Surat dari Timur</h3>
+            <p class="info-poster info-meta">
+              <span class="item-meta">2025</span>
+              <span class="item-meta">Dokumenter</span>
+            </p>
+          </a>
+        </li>
+
+        <li class="kartu-poster">
+          <span class="nomor-urut" aria-hidden="true">04</span>
+          <a class="link-poster" href="watch.html">
+            <span class="bingkai-poster">
+              <img class="gambar-poster" src="assets/images/poster-4.jpg" width="600" height="900" loading="lazy" decoding="async" alt="">
+            </span>
+            <h3 class="judul-poster">Langkah yang Tertinggal</h3>
+            <p class="info-poster info-meta">
+              <span class="item-meta">2023</span>
+              <span class="item-meta">Romansa</span>
+            </p>
+          </a>
+        </li>
+
+        <li class="kartu-poster">
+          <span class="nomor-urut" aria-hidden="true">05</span>
+          <a class="link-poster" href="watch.html">
+            <span class="bingkai-poster">
+              <img class="gambar-poster" src="assets/images/poster-5.jpg" width="600" height="900" loading="lazy" decoding="async" alt="">
+            </span>
+            <h3 class="judul-poster">Malam Terakhir di Bioskop</h3>
+            <p class="info-poster info-meta">
+              <span class="item-meta">2024</span>
+              <span class="item-meta">Misteri</span>
+            </p>
+          </a>
+        </li>
+
+        <li class="kartu-poster">
+          <span class="nomor-urut" aria-hidden="true">06</span>
+          <a class="link-poster" href="watch.html">
+            <span class="bingkai-poster">
+              <img class="gambar-poster" src="assets/images/poster-6.jpg" width="600" height="900" loading="lazy" decoding="async" alt="">
+            </span>
+            <h3 class="judul-poster">Nyanyian Hujan Bulan Juni</h3>
+            <p class="info-poster info-meta">
+              <span class="item-meta">2025</span>
+              <span class="item-meta">Drama Keluarga</span>
+            </p>
+          </a>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer-utama">
+    <div class="container">
+      <div class="footer-atas">
+        <div>
+          <a class="logo-footer" href="index.html">STREAMING</a>
+          <p class="teks-footer">Kurasi sinema pilihan untuk ditonton malam ini.</p>
+        </div>
+        <nav class="navigasi-footer" aria-label="Navigasi footer">
+          <ul class="menu-footer" role="list">
+            <li><a class="link-footer" href="index.html" aria-current="page">Beranda</a></li>
+            <li><a class="link-footer" href="catalog.html">Katalog</a></li>
+            <li><a class="link-footer" href="watch.html">Tonton</a></li>
+            <li><a class="link-footer" href="subscription.html">Langganan</a></li>
+            <li><a class="link-footer" href="login.html">Masuk</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="hak-cipta">© 2026 Website Streaming</p>
+    </div>
+  </footer>
 </body>
 </html>
