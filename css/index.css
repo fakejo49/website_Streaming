@@ -100,6 +100,39 @@
     gap: 10px;
   }
 
+  /* latar cadangan kartu */
+  .kartu-film:nth-child(1) {
+    background: linear-gradient(135deg, #2b3544 0%, #15171e 100%);
+  }
+
+  .kartu-film:nth-child(2) {
+    background: linear-gradient(135deg, #1d354f 0%, #12151f 100%);
+  }
+
+  .kartu-film:nth-child(3) {
+    background: linear-gradient(135deg, #4b1820 0%, #161318 100%);
+  }
+
+  .kartu-film:nth-child(4) {
+    background: linear-gradient(135deg, #37232c 0%, #141418 100%);
+  }
+
+  .kartu-lanjut:nth-child(1) {
+    background: linear-gradient(135deg, #4b2d22 0%, #171415 100%);
+  }
+
+  .kartu-lanjut:nth-child(2) {
+    background: linear-gradient(135deg, #3e3a2b 0%, #151518 100%);
+  }
+
+  .kartu-lanjut:nth-child(3) {
+    background: linear-gradient(135deg, #273e37 0%, #131618 100%);
+  }
+
+  .kartu-lanjut:nth-child(4) {
+    background: linear-gradient(135deg, #33273d 0%, #141419 100%);
+  }
+
   /* tampilan responsif tablet & mobile */
   @media (max-width: 767px) {
     .hero-banner {
