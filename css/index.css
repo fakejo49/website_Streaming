@@ -1,214 +1,121 @@
-/* bagian hero */
-.hero {
-  display: grid;
-  grid-template-columns: minmax(0, 9fr) minmax(0, 11fr);
-  align-items: center;
-  gap: 3rem;
-  min-height: clamp(560px, 72vh, 760px);
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
+/* stylesheet halaman beranda */
 
-.hero-teks {
-  min-width: 0;
-}
-
-.hero-info {
-  padding-bottom: 0.75rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid var(--garis);
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--aksen-baja);
-}
-
-.hero-judul {
-  margin-bottom: 1.5rem;
-  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
-  line-height: 1.05;
-  max-width: 14ch;
-}
-
-.hero-sinopsis {
-  margin-bottom: 2rem;
-  color: var(--teks-redup);
-  max-width: 58ch;
-}
-
-.hero-aksi {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.hero-media {
-  min-width: 0;
-  aspect-ratio: 4 / 5;
-  background-color: var(--bg-permukaan);
-  border: 1px solid var(--garis);
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.hero-gambar {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* bagian sedang tren */
-.bagian-tren {
-  padding-top: 4rem;
-  padding-bottom: 6rem;
-}
-
-.kepala-bagian {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding-top: 1.5rem;
-  margin-bottom: 2rem;
-  border-top: 1px solid var(--garis);
-}
-
-.judul-bagian {
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
-  line-height: 1.15;
-}
-
-.link-semua {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  font-size: 0.875rem;
-  color: var(--teks-redup);
-  transition: color 0.16s ease;
-}
-
-/* daftar kartu poster */
-.grid-poster {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 2rem 1.5rem;
-}
-
-.kartu-poster {
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.nomor-urut {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--aksen-baja);
-}
-
-.link-poster {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-}
-
-.bingkai-poster {
-  display: block;
-  aspect-ratio: 2 / 3;
-  margin-bottom: 0.75rem;
-  background-color: var(--bg-permukaan);
-  border: 1px solid var(--garis);
-  border-radius: 4px;
-  overflow: hidden;
-  transition: border-color 0.16s ease;
-}
-
-.gambar-poster {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.18s ease;
-}
-
-.judul-poster {
-  margin-bottom: 0.25rem;
-  font-size: 1.125rem;
-  line-height: 1.35;
-  color: var(--teks-utama);
-}
-
-.info-poster {
-  font-size: 0.875rem;
-  color: var(--teks-redup);
-}
-
-/* efek hover kartu poster & link */
-@media (hover: hover) and (pointer: fine) {
-  .link-semua:hover {
-    color: var(--teks-utama);
-    text-decoration: underline;
-    text-decoration-color: var(--aksen-baja);
-    text-underline-offset: 6px;
+@layer page {
+  /* bagian hero */
+  .hero-banner {
+    position: relative;
+    min-height: 316px;
+    display: flex;
+    align-items: flex-end;
+    padding: 34px 36px 32px;
+    border-radius: var(--radius-hero);
+    overflow: hidden;
+    border: 1px solid var(--garis-sedang);
+    background:
+      radial-gradient(circle at 75% 32%, rgba(212, 165, 116, 0.34), transparent 48%),
+      linear-gradient(115deg, #1b1815 0%, #3a342c 54%, #181a1f 100%);
+    box-shadow: var(--bayangan-kartu);
   }
 
-  .link-poster:hover .bingkai-poster {
-    border-color: var(--garis-terang);
-  }
-
-  .link-poster:hover .gambar-poster {
-    transform: scale(1.02);
-  }
-
-  .link-poster:hover .judul-poster {
-    text-decoration: underline;
-    text-decoration-color: var(--aksen-baja);
-    text-underline-offset: 6px;
-  }
-}
-
-/* tampilan responsif tablet & mobile */
-@media (max-width: 1023px) {
-  .grid-poster {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 767px) {
-  .hero {
-    grid-template-columns: 1fr;
-    min-height: auto;
-    gap: 2rem;
-    padding-top: 2.5rem;
-    padding-bottom: 3rem;
-  }
-
-  .bagian-tren {
-    padding-top: 2.5rem;
-    padding-bottom: 4rem;
-  }
-}
-
-@media (max-width: 479px) {
-  .grid-poster {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-aksi {
-    flex-direction: column;
-  }
-
-  .hero-aksi .tombol {
+  .gambar-hero {
+    position: absolute;
+    inset: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 22%;
+  }
+
+  /* gradasi gelap latar hero */
+  .lapis-hero {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(
+        90deg,
+        rgba(12, 12, 15, 0.96) 0%,
+        rgba(12, 12, 15, 0.84) 48%,
+        rgba(12, 12, 15, 0.34) 100%
+      ),
+      linear-gradient(
+        to top,
+        rgba(12, 12, 15, 0.88) 0%,
+        transparent 56%
+      );
+  }
+
+  .isi-hero {
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .label-rilis {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 11px;
+    border-radius: var(--radius-pil);
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid var(--garis-sedang);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--teks-sekunder);
+  }
+
+  .judul-hero {
+    font-size: clamp(1.9rem, 3.6vw, 2.95rem);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 0.98;
+    text-transform: uppercase;
+    color: var(--teks-utama);
+    text-shadow: 0 6px 24px rgba(0, 0, 0, 0.55);
+  }
+
+  .meta-hero {
+    font-size: 0.84rem;
+    font-weight: 500;
+    color: var(--teks-sekunder);
+  }
+
+  .deskripsi-hero {
+    font-size: 0.86rem;
+    line-height: 1.5;
+    color: var(--teks-sekunder);
+    max-width: 440px;
+  }
+
+  .aksi-hero {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* tampilan responsif tablet & mobile */
+  @media (max-width: 767px) {
+    .hero-banner {
+      min-height: 268px;
+      padding: 26px 22px;
+    }
+  }
+
+  @media (max-width: 639px) {
+    .hero-banner {
+      min-height: 248px;
+      padding: 22px 18px;
+    }
+
+    .deskripsi-hero {
+      font-size: 0.8rem;
+    }
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .link-poster:hover .gambar-poster {
-    transform: none;
-  }
-}
-
