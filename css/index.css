@@ -130,6 +130,19 @@
   gap: 14px;
 }
 
+/* baris pertama menempel ke bagian bawah hero */
+.baris-pertama {
+  position: relative;
+  z-index: 3;
+  margin-top: -54px;
+}
+
+.tengah-tombol {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
 /* tampilan responsif hero */
 @media (max-width: 767px) {
   .hero {
