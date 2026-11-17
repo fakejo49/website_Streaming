@@ -66,617 +66,204 @@
   </header>
 
   <main id="utama">
-    <section class="hero-katalog" aria-labelledby="judul-katalog">
-      <img src="assets/images/background.jpg" alt="" class="gambar-hero-katalog">
-      <div class="lapis-hero-katalog" aria-hidden="true"></div>
-
+    <section class="header-katalog" aria-labelledby="judul-katalog">
       <div class="wadah">
-        <div class="isi-hero-katalog">
-          <div class="grup-badge-katalog">
-            <span class="badge-merah">Koleksi Nusantara</span>
-            <span class="badge-redup">36 Judul Pilihan</span>
-          </div>
+        <h1 id="judul-katalog" class="judul-katalog">Katalog Film &amp; Serial</h1>
+        <p class="subjudul-katalog">Pilih kategori tayangan yang ingin kamu tonton.</p>
 
-          <h1 id="judul-katalog" class="judul-hero-katalog">Katalog Film &amp; Serial</h1>
-          <p class="sinopsis-hero-katalog">Jelajahi tayangan layar lebar, serial orisinal, anime pilihan, dan dokumenter terbaik dalam kualitas 4K UHD.</p>
-        </div>
+        <nav class="filter-kategori" aria-label="Filter kategori">
+          <a href="catalog.html" class="pil-kategori aktif" aria-current="page">Semua</a>
+          <a href="catalog.html" class="pil-kategori">Film</a>
+          <a href="catalog.html" class="pil-kategori">Serial TV</a>
+          <a href="catalog.html" class="pil-kategori">Anime</a>
+          <a href="catalog.html" class="pil-kategori">Dokumenter</a>
+        </nav>
       </div>
     </section>
 
-    <section class="baris-konten area-filter-katalog" aria-label="Filter dan pengurutan katalog">
+    <section class="baris-konten" aria-labelledby="judul-daftar">
       <div class="wadah">
-        <div class="panel-filter">
-          <nav class="daftar-pil-kategori" aria-label="Kategori tayangan">
-            <a href="catalog.html" class="pil-filter aktif" aria-current="page">Semua</a>
-            <a href="catalog.html?kategori=film" class="pil-filter">Film</a>
-            <a href="catalog.html?kategori=serial" class="pil-filter">Serial TV</a>
-            <a href="catalog.html?kategori=anime" class="pil-filter">Anime</a>
-            <a href="catalog.html?kategori=dokumenter" class="pil-filter">Dokumenter</a>
-          </nav>
+        <div class="kepala-baris">
+          <h2 id="judul-daftar" class="judul-baris">Semua Tayangan</h2>
+          <span class="info-jumlah">12 Judul</span>
+        </div>
 
-          <div class="baris-subfilter">
-            <nav class="daftar-pil-genre" aria-label="Filter genre">
-              <a href="catalog.html" class="pil-genre aktif" aria-current="page">Semua Genre</a>
-              <a href="catalog.html?genre=drama" class="pil-genre">Drama</a>
-              <a href="catalog.html?genre=aksi" class="pil-genre">Aksi</a>
-              <a href="catalog.html?genre=thriller" class="pil-genre">Thriller</a>
-              <a href="catalog.html?genre=misteri" class="pil-genre">Misteri</a>
-              <a href="catalog.html?genre=horor" class="pil-genre">Horor</a>
-              <a href="catalog.html?genre=romansa" class="pil-genre">Romansa</a>
-            </nav>
-
-            <div class="grup-urut" role="group" aria-label="Urutkan katalog">
-              <span class="label-urut">Urutkan:</span>
-              <a href="catalog.html?urut=populer" class="pil-urut aktif">Terpopuler</a>
-              <a href="catalog.html?urut=terbaru" class="pil-urut">Terbaru</a>
-              <a href="catalog.html?urut=rating" class="pil-urut">Rating Tertinggi</a>
+        <div class="grid-kartu">
+          <a href="watch.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="assets/images/trailer.jpg" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+                </svg>
+              </span>
+              <span class="lencana-genre">Misteri</span>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            <h3 class="judul-poster">Kabut di Perbatasan</h3>
+            <p class="tahun-poster">2025 &bull; 8 Episode</p>
+          </a>
 
-    <section class="baris-konten" aria-labelledby="judul-daftar-katalog">
-      <div class="wadah wadah-paginasi">
-        <input type="radio" name="halaman-katalog" id="hal-1" class="kontrol-halaman" checked>
-        <input type="radio" name="halaman-katalog" id="hal-2" class="kontrol-halaman">
-        <input type="radio" name="halaman-katalog" id="hal-3" class="kontrol-halaman">
-
-        <div class="kepala-baris kepala-katalog">
-          <h2 id="judul-daftar-katalog" class="judul-baris">Semua Tayangan</h2>
-          <span class="keterangan-hasil hasil-hal-1">Menampilkan 1&ndash;12 dari 36 judul</span>
-          <span class="keterangan-hasil hasil-hal-2">Menampilkan 13&ndash;24 dari 36 judul</span>
-          <span class="keterangan-hasil hasil-hal-3">Menampilkan 25&ndash;36 dari 36 judul</span>
-        </div>
-
-        <!-- HALAMAN 1 -->
-        <div class="halaman-katalog" data-halaman="1">
-          <div class="grid-kartu">
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Misteri</span>
-              </div>
-              <h3 class="judul-poster">Kabut di Perbatasan</h3>
-              <p class="meta-poster">2025 &bull; 8 Episode</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Drama</span>
-              </div>
-              <h3 class="judul-poster">Laskar Malam</h3>
-              <p class="meta-poster">2024 &bull; Film</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Thriller</span>
-              </div>
-              <h3 class="judul-poster">Kode Nusantara</h3>
-              <p class="meta-poster">2025 &bull; 8 Episode</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Keluarga</span>
-              </div>
-              <h3 class="judul-poster">Rumah di Atas Awan</h3>
-              <p class="meta-poster">2024 &bull; Film</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Aksi</span>
-              </div>
-              <h3 class="judul-poster">Gelombang Timur</h3>
-              <p class="meta-poster">2025 &bull; Film</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Kriminal</span>
-              </div>
-              <h3 class="judul-poster">Senja di Pelabuhan Tua</h3>
-              <p class="meta-poster">2023 &bull; Film</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Laga</span>
-              </div>
-              <h3 class="judul-poster">Bayang-Bayang Jakarta</h3>
-              <p class="meta-poster">2025 &bull; 6 Episode</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Aksi</span>
-              </div>
-              <h3 class="judul-poster">Penjaga Selat Sunda</h3>
-              <p class="meta-poster">2025 &bull; Film</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Misteri</span>
-              </div>
-              <h3 class="judul-poster">Saksi Terakhir</h3>
-              <p class="meta-poster">2025 &bull; 6 Episode</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Horor</span>
-              </div>
-              <h3 class="judul-poster">Kamar 404</h3>
-              <p class="meta-poster">2024 &bull; Film</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Aksi</span>
-              </div>
-              <h3 class="judul-poster">Arus Bawah</h3>
-              <p class="meta-poster">2024 &bull; 10 Episode</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Sejarah</span>
-              </div>
-              <h3 class="judul-poster">Langit Merah Banda</h3>
-              <p class="meta-poster">2025 &bull; 8 Episode</p>
-            </a>
-          </div>
-
-          <nav class="paginasi-katalog" aria-label="Navigasi halaman 1">
-            <span class="tombol-paginasi nonaktif" aria-disabled="true">Sebelumnya</span>
-            <div class="grup-nomor-halaman">
-              <label for="hal-1" class="nomor-halaman aktif">1</label>
-              <label for="hal-2" class="nomor-halaman">2</label>
-              <label for="hal-3" class="nomor-halaman">3</label>
+          <a href="watch.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="assets/images/trailer.jpg" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+                </svg>
+              </span>
+              <span class="lencana-genre">Drama</span>
             </div>
-            <label for="hal-2" class="tombol-paginasi">Berikutnya</label>
-          </nav>
-        </div>
+            <h3 class="judul-poster">Laskar Malam</h3>
+            <p class="tahun-poster">2024 &bull; Film</p>
+          </a>
 
-        <!-- HALAMAN 2 -->
-        <div class="halaman-katalog" data-halaman="2">
-          <div class="grid-kartu">
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Drama</span>
-              </div>
-              <h3 class="judul-poster">Surat dari Sabang</h3>
-              <p class="meta-poster">2024 &bull; Film</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Anime</span>
-              </div>
-              <h3 class="judul-poster">Pedang Cakrawala</h3>
-              <p class="meta-poster">2025 &bull; 12 Episode</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Anime</span>
-              </div>
-              <h3 class="judul-poster">Akademi Bintang Selatan</h3>
-              <p class="meta-poster">2025 &bull; 24 Episode</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Fantasi</span>
-              </div>
-              <h3 class="judul-poster">Penjaga Gerbang Waktu</h3>
-              <p class="meta-poster">2026 &bull; 12 Episode</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Anime</span>
-              </div>
-              <h3 class="judul-poster">Kronik Kota Besi</h3>
-              <p class="meta-poster">2024 &bull; Film</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Laga</span>
-              </div>
-              <h3 class="judul-poster">Naga Samudra Utara</h3>
-              <p class="meta-poster">2025 &bull; 16 Episode</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Anime</span>
-              </div>
-              <h3 class="judul-poster">Langit Musim Hujan</h3>
-              <p class="meta-poster">2024 &bull; Film</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Serial</span>
-              </div>
-              <h3 class="judul-poster">Garda Khatulistiwa</h3>
-              <p class="meta-poster">2025 &bull; 8 Episode</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Komedi</span>
-              </div>
-              <h3 class="judul-poster">Warung Kopi Tengah Malam</h3>
-              <p class="meta-poster">2025 &bull; 10 Episode</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Misteri</span>
-              </div>
-              <h3 class="judul-poster">Jejak di Balik Tirai</h3>
-              <p class="meta-poster">2024 &bull; 6 Episode</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Dokumenter</span>
-              </div>
-              <h3 class="judul-poster">Ekspedisi Rimba Kalimantan</h3>
-              <p class="meta-poster">2026 &bull; 4 Episode</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Aksi</span>
-              </div>
-              <h3 class="judul-poster">Operasi Merah Putih</h3>
-              <p class="meta-poster">2025 &bull; Film</p>
-            </a>
-          </div>
-
-          <nav class="paginasi-katalog" aria-label="Navigasi halaman 2">
-            <label for="hal-1" class="tombol-paginasi">Sebelumnya</label>
-            <div class="grup-nomor-halaman">
-              <label for="hal-1" class="nomor-halaman">1</label>
-              <label for="hal-2" class="nomor-halaman aktif">2</label>
-              <label for="hal-3" class="nomor-halaman">3</label>
+          <a href="watch.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="assets/images/trailer.jpg" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+                </svg>
+              </span>
+              <span class="lencana-genre">Thriller</span>
             </div>
-            <label for="hal-3" class="tombol-paginasi">Berikutnya</label>
-          </nav>
-        </div>
+            <h3 class="judul-poster">Kode Nusantara</h3>
+            <p class="tahun-poster">2025 &bull; 8 Episode</p>
+          </a>
 
-        <!-- HALAMAN 3 -->
-        <div class="halaman-katalog" data-halaman="3">
-          <div class="grid-kartu">
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Drama</span>
-              </div>
-              <h3 class="judul-poster">Meja Makan Malam</h3>
-              <p class="meta-poster">2024 &bull; 8 Episode</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Drama</span>
-              </div>
-              <h3 class="judul-poster">Kafe Tengah Malam</h3>
-              <p class="meta-poster">2025 &bull; 10 Episode</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Romansa</span>
-              </div>
-              <h3 class="judul-poster">Janji di Stasiun Gambir</h3>
-              <p class="meta-poster">2024 &bull; Film</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Drama</span>
-              </div>
-              <h3 class="judul-poster">Catatan Hujan</h3>
-              <p class="meta-poster">2023 &bull; Film</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Drama</span>
-              </div>
-              <h3 class="judul-poster">Di Antara Dua Kota</h3>
-              <p class="meta-poster">2025 &bull; Film</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Misteri</span>
-              </div>
-              <h3 class="judul-poster">Melodi Terakhir</h3>
-              <p class="meta-poster">2025 &bull; 6 Episode</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Romansa</span>
-              </div>
-              <h3 class="judul-poster">Musim Semi di Bandung</h3>
-              <p class="meta-poster">2024 &bull; Film</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Misteri</span>
-              </div>
-              <h3 class="judul-poster">Jejak Merah Merapi</h3>
-              <p class="meta-poster">2026 &bull; Film</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Thriller</span>
-              </div>
-              <h3 class="judul-poster">Protokol Garis Hitam</h3>
-              <p class="meta-poster">2026 &bull; 8 Episode</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Horor</span>
-              </div>
-              <h3 class="judul-poster">Warisan Rumah Tua</h3>
-              <p class="meta-poster">2023 &bull; Film</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Dokumenter</span>
-              </div>
-              <h3 class="judul-poster">Jejak Rempah Nusantara</h3>
-              <p class="meta-poster">2025 &bull; 6 Episode</p>
-            </a>
-
-            <a href="watch.html" class="kartu-poster">
-              <div class="kotak-poster">
-                <img src="assets/images/trailer.jpg" alt="" loading="lazy">
-                <span class="lencana-simpan" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-                  </svg>
-                </span>
-                <span class="lencana-genre">Aksi</span>
-              </div>
-              <h3 class="judul-poster">Benteng Terakhir</h3>
-              <p class="meta-poster">2026 &bull; Film</p>
-            </a>
-          </div>
-
-          <nav class="paginasi-katalog" aria-label="Navigasi halaman 3">
-            <label for="hal-2" class="tombol-paginasi">Sebelumnya</label>
-            <div class="grup-nomor-halaman">
-              <label for="hal-1" class="nomor-halaman">1</label>
-              <label for="hal-2" class="nomor-halaman">2</label>
-              <label for="hal-3" class="nomor-halaman aktif">3</label>
+          <a href="watch.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="assets/images/trailer.jpg" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+                </svg>
+              </span>
+              <span class="lencana-genre">Keluarga</span>
             </div>
-            <span class="tombol-paginasi nonaktif" aria-disabled="true">Berikutnya</span>
-          </nav>
+            <h3 class="judul-poster">Rumah di Atas Awan</h3>
+            <p class="tahun-poster">2024 &bull; Film</p>
+          </a>
+
+          <a href="watch.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="assets/images/trailer.jpg" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+                </svg>
+              </span>
+              <span class="lencana-genre">Aksi</span>
+            </div>
+            <h3 class="judul-poster">Gelombang Timur</h3>
+            <p class="tahun-poster">2025 &bull; Film</p>
+          </a>
+
+          <a href="watch.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="assets/images/trailer.jpg" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+                </svg>
+              </span>
+              <span class="lencana-genre">Kriminal</span>
+            </div>
+            <h3 class="judul-poster">Senja di Pelabuhan Tua</h3>
+            <p class="tahun-poster">2023 &bull; Film</p>
+          </a>
+
+          <a href="watch.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="assets/images/trailer.jpg" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+                </svg>
+              </span>
+              <span class="lencana-genre">Laga</span>
+            </div>
+            <h3 class="judul-poster">Bayang-Bayang Jakarta</h3>
+            <p class="tahun-poster">2025 &bull; 6 Episode</p>
+          </a>
+
+          <a href="watch.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="assets/images/trailer.jpg" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+                </svg>
+              </span>
+              <span class="lencana-genre">Aksi</span>
+            </div>
+            <h3 class="judul-poster">Penjaga Selat Sunda</h3>
+            <p class="tahun-poster">2025 &bull; Film</p>
+          </a>
+
+          <a href="watch.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="assets/images/trailer.jpg" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+                </svg>
+              </span>
+              <span class="lencana-genre">Misteri</span>
+            </div>
+            <h3 class="judul-poster">Saksi Terakhir</h3>
+            <p class="tahun-poster">2025 &bull; 6 Episode</p>
+          </a>
+
+          <a href="watch.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="assets/images/trailer.jpg" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+                </svg>
+              </span>
+              <span class="lencana-genre">Horor</span>
+            </div>
+            <h3 class="judul-poster">Kamar 404</h3>
+            <p class="tahun-poster">2024 &bull; Film</p>
+          </a>
+
+          <a href="watch.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="assets/images/trailer.jpg" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+                </svg>
+              </span>
+              <span class="lencana-genre">Anime</span>
+            </div>
+            <h3 class="judul-poster">Pedang Cakrawala</h3>
+            <p class="tahun-poster">2025 &bull; 12 Episode</p>
+          </a>
+
+          <a href="watch.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="assets/images/trailer.jpg" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+                </svg>
+              </span>
+              <span class="lencana-genre">Dokumenter</span>
+            </div>
+            <h3 class="judul-poster">Ekspedisi Rimba Kalimantan</h3>
+            <p class="tahun-poster">2026 &bull; 4 Episode</p>
+          </a>
         </div>
+
+        <nav class="paginasi" aria-label="Navigasi halaman">
+          <a href="catalog.html" class="tombol-halaman aktif" aria-current="page">1</a>
+          <a href="catalog.html" class="tombol-halaman">2</a>
+          <a href="catalog.html" class="tombol-halaman">3</a>
+          <a href="catalog.html" class="tombol-halaman">Berikutnya</a>
+        </nav>
       </div>
     </section>
   </main>
