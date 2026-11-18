@@ -1,0 +1,155 @@
+/* stylesheet halaman masuk akun */
+
+/* sorot ikon masuk aktif di bilah atas */
+.tautan-ikon.aktif {
+  color: var(--warna-utama);
+  font-weight: 600;
+}
+
+/* latar dan pembungkus halaman login */
+.seksi-login {
+  position: relative;
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 0;
+  background-color: var(--bg-utama);
+  background-image:
+    linear-gradient(
+      to bottom,
+      #111315 0%,
+      rgba(17, 19, 21, 0.78) 20%,
+      rgba(17, 19, 21, 0.82) 80%,
+      #111315 100%
+    ),
+    url("../assets/images/login-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.wadah-login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* kartu form login */
+.kartu-login {
+  width: 100%;
+  max-width: 430px;
+  padding: 36px 32px;
+  background-color: rgba(26, 28, 32, 0.95);
+  border: 1px solid var(--garis-sedang);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65);
+}
+
+.kepala-login {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.label-kecil {
+  display: inline-block;
+  padding: 3px 10px;
+  margin-bottom: 10px;
+  border-radius: var(--radius-kecil);
+  background-color: rgba(229, 9, 20, 0.18);
+  border: 1px solid rgba(229, 9, 20, 0.45);
+  color: #fecaca;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.judul-login {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--teks-utama);
+  line-height: 1.2;
+}
+
+.subjudul-login {
+  margin-top: 6px;
+  font-size: 0.88rem;
+  color: var(--teks-sekunder);
+}
+
+/* baris ingat saya dan tombol */
+.baris-ingat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  font-size: 0.82rem;
+}
+
+.ingat-saya {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--teks-sekunder);
+  cursor: pointer;
+}
+
+.ingat-saya input {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--warna-utama);
+  cursor: pointer;
+}
+
+.tautan-bantuan {
+  color: var(--teks-redup);
+  transition: color var(--transisi);
+}
+
+.tautan-bantuan:hover {
+  color: var(--teks-utama);
+}
+
+.tombol-penuh {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 0.92rem;
+}
+
+/* info langganan di bawah form */
+.kaki-login {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--garis-tipis);
+  text-align: center;
+  font-size: 0.84rem;
+  color: var(--teks-redup);
+}
+
+.tautan-merah {
+  color: var(--warna-utama);
+  font-weight: 600;
+  transition: color var(--transisi);
+}
+
+.tautan-merah:hover {
+  color: #ff3b45;
+  text-decoration: underline;
+}
+
+/* tampilan responsif */
+@media (max-width: 539px) {
+  .seksi-login {
+    padding: 32px 0;
+  }
+
+  .kartu-login {
+    padding: 26px 20px;
+  }
+
+  .judul-login {
+    font-size: 1.45rem;
+  }
+}
