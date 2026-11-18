@@ -1,0 +1,333 @@
+/* stylesheet halaman tonton video */
+
+/* panggung sinema dan jalur navigasi */
+.panggung-tonton {
+  padding: 20px 0 36px;
+  background-color: #0b0d0f;
+  background-image:
+    radial-gradient(circle at 38% 36%, rgba(229, 9, 20, 0.14), transparent 55%),
+    linear-gradient(to bottom, #0b0d0f 0%, #111315 100%);
+  border-bottom: 1px solid var(--garis-tipis);
+}
+
+.jalur-navigasi {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 0.82rem;
+  color: var(--teks-redup);
+}
+
+.jalur-navigasi a {
+  transition: color var(--transisi);
+}
+
+.jalur-navigasi a:hover {
+  color: var(--warna-utama);
+}
+
+.jalur-aktif {
+  color: var(--teks-sekunder);
+  font-weight: 500;
+}
+
+.grid-panggung {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 20px;
+  align-items: start;
+}
+
+/* area pemutar video utama */
+.area-pemutar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bingkai-video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-sedang);
+  overflow: hidden;
+  background-color: #000000;
+  border: 1px solid var(--garis-sedang);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.85), 0 0 36px rgba(229, 9, 20, 0.12);
+}
+
+.pemutar-utama {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #000000;
+}
+
+.bilah-pemutar {
+  padding: 12px 16px;
+  border-radius: var(--radius-sedang);
+  background-color: var(--bg-kartu);
+  border: 1px solid var(--garis-tipis);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.status-putar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--teks-utama);
+}
+
+.titik-merah {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--warna-utama);
+  box-shadow: 0 0 8px rgba(229, 9, 20, 0.85);
+  flex-shrink: 0;
+}
+
+.grup-kualitas {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.info-kualitas {
+  padding: 2px 8px;
+  border-radius: var(--radius-kecil);
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--garis-tipis);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--teks-sekunder);
+}
+
+.aksi-pemutar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tombol-ringkas {
+  padding: 8px 14px;
+  font-size: 0.8rem;
+}
+
+.tombol-ringkas svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* panel daftar episode */
+.panel-episode {
+  border-radius: var(--radius-sedang);
+  background-color: var(--bg-kartu);
+  border: 1px solid var(--garis-tipis);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.kepala-episode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.judul-panel-ep {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--teks-utama);
+}
+
+.info-panel-ep {
+  font-size: 0.78rem;
+  color: var(--teks-redup);
+}
+
+.grid-nomor-ep {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.nomor-ep {
+  position: relative;
+  height: 38px;
+  border-radius: 6px;
+  background-color: #111315;
+  border: 1px solid var(--garis-tipis);
+  color: var(--teks-sekunder);
+  font-size: 0.84rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transisi), border-color var(--transisi), color var(--transisi);
+}
+
+.nomor-ep:hover {
+  background-color: var(--bg-hover);
+  border-color: var(--garis-sedang);
+  color: var(--teks-utama);
+}
+
+.nomor-ep.aktif {
+  background-color: var(--warna-utama);
+  border-color: var(--warna-utama);
+  color: var(--teks-utama);
+}
+
+.tag-vip-ep {
+  position: absolute;
+  top: -5px;
+  right: -3px;
+  padding: 1px 4px;
+  border-radius: 3px;
+  background-color: var(--warna-utama);
+  color: var(--teks-utama);
+  font-size: 0.56rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.daftar-episode {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 292px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.item-episode {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #14161a;
+  border: 1px solid transparent;
+  transition: background-color var(--transisi), border-color var(--transisi);
+}
+
+.item-episode:hover {
+  background-color: var(--bg-hover);
+  border-color: var(--garis-tipis);
+}
+
+.item-episode.aktif {
+  background-color: rgba(229, 9, 20, 0.14);
+  border-color: rgba(229, 9, 20, 0.55);
+}
+
+.thumb-episode {
+  position: relative;
+  width: 104px;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-kecil);
+  overflow: hidden;
+  background-color: #0b0c0e;
+  flex-shrink: 0;
+}
+
+.thumb-episode img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nomor-thumb {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background-color: rgba(11, 12, 14, 0.85);
+  color: var(--teks-utama);
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.teks-episode {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.judul-episode {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--teks-utama);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.durasi-episode {
+  font-size: 0.74rem;
+  color: var(--teks-redup);
+}
+
+/* tampilan responsif */
+@media (max-width: 1080px) {
+  .grid-panggung,
+  .grid-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .daftar-episode {
+    max-height: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-pemeran {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-ulasan-atas,
+  .grid-ulasan-kartu,
+  .daftar-episode {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 539px) {
+  .panggung-tonton {
+    padding: 14px 0 26px;
+  }
+
+  .bilah-pemutar {
+    padding: 12px;
+  }
+
+  .aksi-pemutar {
+    width: 100%;
+  }
+
+  .aksi-pemutar .tombol {
+    flex: 1;
+  }
+
+  .grid-pemeran {
+    grid-template-columns: 1fr;
+  }
+}
