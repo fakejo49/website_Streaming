@@ -283,6 +283,221 @@
   color: var(--teks-redup);
 }
 
+/* seksi detail cerita, pemeran, dan spesifikasi */
+.seksi-detail {
+  padding: 32px 0 24px;
+  border-bottom: 1px solid var(--garis-tipis);
+}
+
+.grid-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 28px;
+  align-items: start;
+}
+
+.kolom-utama-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.judul-tonton {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: var(--teks-utama);
+  line-height: 1.15;
+}
+
+.baris-meta-tonton {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.86rem;
+  color: var(--teks-sekunder);
+}
+
+.lencana-orisinal {
+  padding: 3px 9px;
+  border-radius: var(--radius-kecil);
+  background-color: var(--warna-utama);
+  color: var(--teks-utama);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.lencana-baru {
+  padding: 3px 9px;
+  border-radius: var(--radius-kecil);
+  background-color: rgba(229, 9, 20, 0.18);
+  border: 1px solid rgba(229, 9, 20, 0.45);
+  color: #fecaca;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.skor-inline {
+  color: var(--warna-utama);
+  font-weight: 700;
+}
+
+.pemisah-detail {
+  color: var(--teks-redup);
+}
+
+.daftar-tag-detail {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-detail {
+  padding: 5px 11px;
+  border-radius: var(--radius-kecil);
+  background-color: var(--bg-kartu);
+  border: 1px solid var(--garis-tipis);
+  font-size: 0.78rem;
+  color: var(--teks-sekunder);
+  transition: border-color var(--transisi), color var(--transisi);
+}
+
+.tag-detail:hover {
+  border-color: var(--warna-utama);
+  color: var(--teks-utama);
+}
+
+.sinopsis-lengkap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--teks-sekunder);
+  max-width: 760px;
+}
+
+.subjudul-bagian {
+  margin-top: 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--teks-utama);
+}
+
+.grid-pemeran {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.kartu-pemeran {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: var(--radius-sedang);
+  background-color: var(--bg-kartu);
+  border: 1px solid var(--garis-tipis);
+}
+
+.foto-pemeran {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--garis-sedang);
+  flex-shrink: 0;
+}
+
+.info-pemeran {
+  min-width: 0;
+}
+
+.nama-pemeran {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--teks-utama);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.peran-pemeran {
+  margin-top: 2px;
+  font-size: 0.74rem;
+  color: var(--teks-redup);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* kolom samping detail dan promo vip */
+.kolom-samping-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.kartu-spesifikasi {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.judul-samping-detail {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--teks-utama);
+  margin-bottom: 4px;
+}
+
+.baris-spek {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid var(--garis-tipis);
+  font-size: 0.82rem;
+}
+
+.baris-spek:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.label-spek {
+  color: var(--teks-redup);
+}
+
+.nilai-spek {
+  color: var(--teks-sekunder);
+  font-weight: 500;
+  text-align: right;
+}
+
+.kartu-promo-vip {
+  padding: 22px;
+  border-radius: var(--radius-sedang);
+  background: linear-gradient(145deg, rgba(229, 9, 20, 0.22) 0%, #1a1c20 75%);
+  border: 1px solid rgba(229, 9, 20, 0.45);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.judul-promo-vip {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--teks-utama);
+}
+
+.teks-promo-vip {
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: var(--teks-sekunder);
+}
+
 /* tampilan responsif */
 @media (max-width: 1080px) {
   .grid-panggung,
