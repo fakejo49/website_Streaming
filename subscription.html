@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STREAMING - Paket Langganan</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/subscription.css">
+</head>
+<body>
+  <a href="#utama" class="skip-link">Lewati ke konten utama</a>
+
+  <header class="bilah-atas">
+    <div class="wadah isi-header">
+      <a href="index.html" class="logo-merek">STREAMING</a>
+
+      <nav class="menu-atas" aria-label="Navigasi utama">
+        <a href="index.html" class="tautan-menu">Beranda</a>
+        <a href="catalog.html" class="tautan-menu">Katalog</a>
+        <a href="watch.html" class="tautan-menu">Tonton</a>
+        <a href="subscription.html" class="tautan-menu aktif" aria-current="page">Langganan</a>
+      </nav>
+
+      <form action="catalog.html" method="get" class="kotak-cari" role="search">
+        <input type="search" name="q" placeholder="Cari film atau serial..." aria-label="Cari film atau serial">
+        <button type="submit" aria-label="Cari">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="6.5"></circle>
+            <path d="M16 16l4.2 4.2"></path>
+          </svg>
+        </button>
+      </form>
+
+      <div class="aksi-atas">
+        <a href="watch.html" class="tautan-ikon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+            <circle cx="12" cy="12" r="8.5"></circle>
+            <path d="M12 7.5v5l3.2 2"></path>
+          </svg>
+          <span class="label-ikon">Riwayat</span>
+        </a>
+        <a href="catalog.html" class="tautan-ikon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+            <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+          </svg>
+          <span class="titik-notif" aria-hidden="true">4</span>
+          <span class="label-ikon">Favorit</span>
+        </a>
+        <a href="subscription.html" class="tautan-ikon aktif" aria-current="page">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+            <path d="M4 9l4-4h8l4 4-8 10L4 9z"></path>
+          </svg>
+          <span class="label-ikon">Langganan</span>
+        </a>
+        <a href="login.html" class="tautan-ikon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+            <circle cx="12" cy="8.5" r="3.5"></circle>
+            <path d="M5 19.5c1.5-3.2 4.1-4.8 7-4.8s5.5 1.6 7 4.8"></path>
+          </svg>
+          <span class="label-ikon">Masuk</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="utama">
+    <section class="kepala-langganan" aria-labelledby="judul-langganan">
+      <div class="wadah">
+        <div class="isi-kepala-langganan">
+          <span class="label-vip">VIP STREAMING</span>
+          <h1 id="judul-langganan" class="judul-halaman">Pilih Paket Sesuai Kebutuhanmu</h1>
+          <p class="subjudul-halaman">Nonton ribuan film, anime, dan serial TV eksklusif tanpa iklan. Bisa ganti paket atau berhenti kapan saja.</p>
+
+          <div class="daftar-keunggulan">
+            <span class="item-keunggulan">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Bebas Iklan</span>
+            </span>
+            <span class="item-keunggulan">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Kualitas hingga 4K UHD</span>
+            </span>
+            <span class="item-keunggulan">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Unduh Offline</span>
+            </span>
+            <span class="item-keunggulan">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Akses Episode VIP</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seksi-paket" aria-label="Pilihan paket langganan">
+      <div class="wadah">
+        <div class="grid-paket">
+          <article class="kotak-panel kartu-paket">
+            <div class="kepala-paket">
+              <div class="baris-nama-paket">
+                <h2 class="nama-paket">Dasar</h2>
+                <span class="tag-resolusi">720p HD</span>
+              </div>
+              <p class="ket-paket">Pas untuk menonton santai di satu layar.</p>
+            </div>
+
+            <div class="harga-paket">
+              <span class="nominal">Rp 39.000</span>
+              <span class="periode">/ bulan</span>
+            </div>
+
+            <ul class="daftar-fitur">
+              <li class="item-fitur">
+                <span class="ikon-centang" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Katalog film dan anime reguler</span>
+              </li>
+              <li class="item-fitur">
+                <span class="ikon-centang" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Tonton di 1 perangkat aktif</span>
+              </li>
+              <li class="item-fitur">
+                <span class="ikon-centang" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Kualitas jernih hingga 720p HD</span>
+              </li>
+              <li class="item-fitur nonaktif">
+                <span class="ikon-silang" aria-hidden="true">-</span>
+                <span>Masih terdapat jeda iklan</span>
+              </li>
+              <li class="item-fitur nonaktif">
+                <span class="ikon-silang" aria-hidden="true">-</span>
+                <span>Belum termasuk episode VIP awal</span>
+              </li>
+            </ul>
+
+            <div class="aksi-paket">
+              <a href="#form-langganan" class="tombol tombol-abu tombol-penuh">Pilih Dasar</a>
+            </div>
+          </article>
+
+          <article class="kotak-panel kartu-paket unggulan">
+            <span class="lencana-populer">Paling Laris</span>
+
+            <div class="kepala-paket">
+              <div class="baris-nama-paket">
+                <h2 class="nama-paket">VIP Populer</h2>
+                <span class="tag-resolusi">1080p Full HD</span>
+              </div>
+              <p class="ket-paket">Paket favorit untuk akses episode baru lebih cepat.</p>
+            </div>
+
+            <div class="harga-paket">
+              <span class="nominal">Rp 69.000</span>
+              <span class="periode">/ bulan</span>
+            </div>
+
+            <ul class="daftar-fitur">
+              <li class="item-fitur">
+                <span class="ikon-centang" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Semua katalog + Episode VIP (Ep 07 &amp; 08)</span>
+              </li>
+              <li class="item-fitur">
+                <span class="ikon-centang" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Bebas iklan sepenuhnya saat menonton</span>
+              </li>
+              <li class="item-fitur">
+                <span class="ikon-centang" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Tonton di 2 perangkat bersamaan</span>
+              </li>
+              <li class="item-fitur">
+                <span class="ikon-centang" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Kualitas tajam 1080p Full HD</span>
+              </li>
+              <li class="item-fitur">
+                <span class="ikon-centang" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Simpan offline hingga 25 judul</span>
+              </li>
+            </ul>
+
+            <div class="aksi-paket">
+              <a href="#form-langganan" class="tombol tombol-merah tombol-penuh">Pilih VIP Populer</a>
+            </div>
+          </article>
+
+          <article class="kotak-panel kartu-paket">
+            <div class="kepala-paket">
+              <div class="baris-nama-paket">
+                <h2 class="nama-paket">Keluarga 4K</h2>
+                <span class="tag-resolusi">4K Ultra HD</span>
+              </div>
+              <p class="ket-paket">Pengalaman layar lebar untuk serumah.</p>
+            </div>
+
+            <div class="harga-paket">
+              <span class="nominal">Rp 109.000</span>
+              <span class="periode">/ bulan</span>
+            </div>
+
+            <ul class="daftar-fitur">
+              <li class="item-fitur">
+                <span class="ikon-centang" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Akses penuh seluruh katalog &amp; Episode VIP</span>
+              </li>
+              <li class="item-fitur">
+                <span class="ikon-centang" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Kualitas 4K Ultra HD &amp; Audio Jernih</span>
+              </li>
+              <li class="item-fitur">
+                <span class="ikon-centang" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Tonton di 4 perangkat sekaligus + Smart TV</span>
+              </li>
+              <li class="item-fitur">
+                <span class="ikon-centang" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Bebas iklan tanpa gangguan</span>
+              </li>
+              <li class="item-fitur">
+                <span class="ikon-centang" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Unduhan offline tanpa batas</span>
+              </li>
+            </ul>
+
+            <div class="aksi-paket">
+              <a href="#form-langganan" class="tombol tombol-abu tombol-penuh">Pilih Keluarga 4K</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="strip-keuntungan">
+          <div class="kartu-keuntungan">
+            <span class="ikon-keuntungan" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="7,5 19,12 7,19"></polygon>
+              </svg>
+            </span>
+            <div>
+              <h3 class="judul-keuntungan">Buka Episode VIP Langsung</h3>
+              <p class="isi-keuntungan">Lanjutkan Episode 07 &amp; 08 Kabut di Perbatasan tanpa menunggu jadwal gratis.</p>
+            </div>
+          </div>
+
+          <div class="kartu-keuntungan">
+            <span class="ikon-keuntungan" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="5" width="18" height="12" rx="2"></rect>
+                <path d="M8 21h8M12 17v4"></path>
+              </svg>
+            </span>
+            <div>
+              <h3 class="judul-keuntungan">Nyaman di Semua Layar</h3>
+              <p class="isi-keuntungan">Tampilan otomatis menyesuaikan layar HP, tablet, laptop, hingga Smart TV.</p>
+            </div>
+          </div>
+
+          <div class="kartu-keuntungan">
+            <span class="ikon-keuntungan" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 4v11m0 0l-4-4m4 4l4-4"></path>
+                <path d="M5 19h14"></path>
+              </svg>
+            </span>
+            <div>
+              <h3 class="judul-keuntungan">Unduh &amp; Nonton Offline</h3>
+              <p class="isi-keuntungan">Simpan film atau anime favorit ke perangkat untuk perjalanan tanpa kuota.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seksi-perbandingan" aria-labelledby="judul-banding">
+      <div class="wadah">
+        <div class="kepala-baris">
+          <h2 id="judul-banding" class="judul-baris">Perbandingan Fitur Paket</h2>
+        </div>
+
+        <div class="kotak-panel wadah-tabel">
+          <table class="tabel-banding">
+            <thead>
+              <tr>
+                <th>Fitur Layanan</th>
+                <th>Dasar</th>
+                <th class="kolom-unggulan">VIP Populer</th>
+                <th>Keluarga 4K</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Resolusi Video Maksimal</td>
+                <td>720p HD</td>
+                <td class="kolom-unggulan">1080p Full HD</td>
+                <td>4K Ultra HD</td>
+              </tr>
+              <tr>
+                <td>Jumlah Perangkat Aktif</td>
+                <td>1 Layar</td>
+                <td class="kolom-unggulan">2 Layar</td>
+                <td>4 Layar</td>
+              </tr>
+              <tr>
+                <td>Bebas Iklan</td>
+                <td class="tanda-kosong">-</td>
+                <td class="kolom-unggulan tanda-centang">&#10003;</td>
+                <td class="tanda-centang">&#10003;</td>
+              </tr>
+              <tr>
+                <td>Akses Episode Awal VIP</td>
+                <td class="tanda-kosong">-</td>
+                <td class="kolom-unggulan tanda-centang">&#10003;</td>
+                <td class="tanda-centang">&#10003;</td>
+              </tr>
+              <tr>
+                <td>Unduh Nonton Offline</td>
+                <td class="tanda-kosong">-</td>
+                <td class="kolom-unggulan">25 Judul</td>
+                <td>Tanpa Batas</td>
+              </tr>
+              <tr>
+                <td>Dukungan Smart TV</td>
+                <td class="tanda-kosong">-</td>
+                <td class="kolom-unggulan tanda-centang">&#10003;</td>
+                <td class="tanda-centang">&#10003;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="form-langganan" class="seksi-aktivasi" aria-labelledby="judul-aktivasi">
+      <div class="wadah">
+        <div class="grid-aktivasi">
+          <form action="login.html" method="get" class="kotak-panel">
+            <h2 id="judul-aktivasi" class="judul-kartu-bagian">Aktifkan Langganan Sekarang</h2>
+            <p class="subjudul-kartu-bagian">Pilih paket dan metode bayar, lalu masuk ke akun untuk mulai menonton.</p>
+
+            <div class="grid-form-dua">
+              <div class="grup-input">
+                <label for="pilih-paket" class="label-input">Paket Pilihan</label>
+                <select id="pilih-paket" name="paket" class="input-gelap">
+                  <option value="dasar">Dasar - Rp 39.000 / bulan</option>
+                  <option value="vip" selected>VIP Populer - Rp 69.000 / bulan</option>
+                  <option value="keluarga">Keluarga 4K - Rp 109.000 / bulan</option>
+                </select>
+              </div>
+
+              <div class="grup-input">
+                <label for="metode-bayar" class="label-input">Metode Pembayaran</label>
+                <select id="metode-bayar" name="metode" class="input-gelap">
+                  <option value="qris">QRIS (Semua E-Wallet)</option>
+                  <option value="ewallet">GoPay / OVO / DANA</option>
+                  <option value="va">Virtual Account Bank</option>
+                  <option value="kartu">Kartu Debit / Kredit</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid-form-dua">
+              <div class="grup-input">
+                <label for="email-langganan" class="label-input">Email Akun</label>
+                <input
+                  type="email"
+                  id="email-langganan"
+                  name="email"
+                  class="input-gelap"
+                  placeholder="nama@email.com"
+                  required>
+              </div>
+
+              <div class="grup-input">
+                <label for="kode-promo" class="label-input">Kode Promo (Opsional)</label>
+                <input
+                  type="text"
+                  id="kode-promo"
+                  name="promo"
+                  class="input-gelap"
+                  placeholder="Contoh: STREAMING26">
+              </div>
+            </div>
+
+            <button type="submit" class="tombol tombol-merah tombol-penuh">Lanjut ke Pembayaran</button>
+          </form>
+
+          <aside class="kotak-panel panel-pembayaran" aria-label="Ringkasan keanggotaan VIP">
+            <div class="kartu-pratinjau-vip">
+              <div class="atas-kartu-vip">
+                <span class="merek-kartu-vip">STREAMING</span>
+                <span class="badge-kartu-vip">VIP PASS</span>
+              </div>
+              <div class="bawah-kartu-vip">
+                <p class="titel-kartu-vip">Keanggotaan Tanpa Batas</p>
+                <p class="info-kartu-vip">Akses penuh film, serial, dan anime bebas iklan</p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="label-metode">Pembayaran yang Didukung</h3>
+              <div class="grid-metode">
+                <span class="lencana-metode">QRIS</span>
+                <span class="lencana-metode">GoPay</span>
+                <span class="lencana-metode">OVO</span>
+                <span class="lencana-metode">DANA</span>
+                <span class="lencana-metode">BCA VA</span>
+                <span class="lencana-metode">Mandiri</span>
+                <span class="lencana-metode">BRI</span>
+                <span class="lencana-metode">Visa</span>
+              </div>
+            </div>
+
+            <p class="catatan-aktivasi">Langganan langsung aktif setelah pembayaran terkonfirmasi. Tidak ada kontrak jangka panjang atau biaya pembatalan.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="seksi-faq" aria-labelledby="judul-faq">
+      <div class="wadah">
+        <div class="kepala-baris">
+          <h2 id="judul-faq" class="judul-baris">Pertanyaan Umum</h2>
+        </div>
+
+        <div class="daftar-faq">
+          <details class="kotak-panel item-faq" open>
+            <summary class="tanya-faq">Bagaimana cara membuka Episode 7 &amp; 8 atau label VIP?</summary>
+            <p class="jawab-faq">Cukup pilih paket VIP Populer atau Keluarga 4K lalu masuk ke akun STREAMING kamu. Setelah paket aktif, semua episode berlabel VIP terbuka otomatis.</p>
+          </details>
+
+          <details class="kotak-panel item-faq">
+            <summary class="tanya-faq">Apakah satu akun bisa dipakai di HP dan laptop sekaligus?</summary>
+            <p class="jawab-faq">Ya. Paket VIP Populer mendukung 2 layar aktif secara bersamaan, sedangkan paket Keluarga 4K mendukung hingga 4 perangkat sekaligus.</p>
+          </details>
+
+          <details class="kotak-panel item-faq">
+            <summary class="tanya-faq">Bagaimana cara berhenti berlangganan?</summary>
+            <p class="jawab-faq">Kamu bisa menghentikan perpanjangan otomatis kapan saja melalui menu pengaturan akun tanpa dikenakan denda atau biaya tambahan.</p>
+          </details>
+
+          <details class="kotak-panel item-faq">
+            <summary class="tanya-faq">Apakah harga paket sudah termasuk pajak dan akses semua genre?</summary>
+            <p class="jawab-faq">Semua harga paket di atas sudah termasuk akses penuh film Indonesia, drama Asia, anime pilihan, dan dokumenter tanpa biaya tersembunyi.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-utama">
+    <div class="wadah">
+      <div class="komunitas-footer">
+        <h2 class="judul-komunitas">Nikmati Pengalaman Menonton Terbaik</h2>
+        <p class="subjudul-komunitas">Ikuti <span class="teks-sorot">STREAMING</span> untuk info rilis film dan serial terbaru</p>
+
+        <div class="daftar-sosial">
+          <a href="catalog.html" class="tombol-sosial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M21 5L3 12l6.5 2.4L18 7l-6.2 8.7 5.7 3.8L21 5z"></path>
+            </svg>
+            <span>Telegram</span>
+          </a>
+          <a href="watch.html" class="tombol-sosial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <rect x="3" y="6" width="18" height="12" rx="3"></rect>
+              <polygon points="10,9.5 15.5,12 10,14.5" fill="currentColor" stroke="none"></polygon>
+            </svg>
+            <span>YouTube</span>
+          </a>
+          <a href="subscription.html" class="tombol-sosial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+              <circle cx="12" cy="12" r="3.5"></circle>
+            </svg>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="grid-footer">
+        <div class="kolom-footer">
+          <h3>Tentang STREAMING</h3>
+          <ul class="daftar-link-footer">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="catalog.html">Katalog Film</a></li>
+            <li><a href="watch.html">Pemutar Video</a></li>
+            <li><a href="subscription.html">Paket Langganan</a></li>
+          </ul>
+        </div>
+
+        <div class="kolom-footer">
+          <h3>Kategori</h3>
+          <ul class="daftar-link-footer">
+            <li><a href="catalog.html">Rilis Terbaru</a></li>
+            <li><a href="catalog.html">Film Populer</a></li>
+            <li><a href="catalog.html">Anime Pilihan</a></li>
+            <li><a href="catalog.html">Serial TV Terbaik</a></li>
+          </ul>
+        </div>
+
+        <div class="kolom-footer">
+          <h3>Bantuan</h3>
+          <ul class="daftar-link-footer">
+            <li><a href="login.html">Masuk Akun</a></li>
+            <li><a href="subscription.html">Cara Berlangganan</a></li>
+            <li><a href="watch.html">Riwayat Tontonan</a></li>
+            <li><a href="catalog.html">Pertanyaan Umum</a></li>
+          </ul>
+        </div>
+
+        <div class="kolom-footer">
+          <h3>Layanan</h3>
+          <ul class="daftar-link-footer">
+            <li><a href="subscription.html">Kebijakan Privasi</a></li>
+            <li><a href="subscription.html">Syarat Penggunaan</a></li>
+          </ul>
+        </div>
+
+        <div class="pil-bahasa" aria-label="Bahasa aktif">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M3 12h18M12 3c2.8 2.6 4.2 5.6 4.2 9s-1.4 6.4-4.2 9c-2.8-2.6-4.2-5.6-4.2-9S9.2 5.6 12 3z"></path>
+          </svg>
+          <span>Bahasa Indonesia</span>
+        </div>
+      </div>
+
+      <div class="bawah-footer">
+        <p>Hak Cipta &copy; 2026 STREAMING. Seluruh hak dilindungi.</p>
+        <p>Platform streaming hiburan karya <strong>Tim Jujur Janggal</strong>.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
