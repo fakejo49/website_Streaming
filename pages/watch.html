@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>STREAMING - Kabut di Perbatasan Episode 1</title>
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/watch.css">
+  <title>Watchana | Doctor X Episode 1</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/watch.css">
 </head>
 <body>
   <a href="#utama" class="skip-link">Lewati ke konten utama</a>
 
   <header class="bilah-atas">
     <div class="wadah isi-header">
-      <a href="index.html" class="logo-merek">STREAMING</a>
+      <a href="home.html" class="logo-merek">STREAMING</a>
 
       <nav class="menu-atas" aria-label="Navigasi utama">
-        <a href="index.html" class="tautan-menu">Beranda</a>
+        <a href="home.html" class="tautan-menu">Beranda</a>
         <a href="catalog.html" class="tautan-menu">Katalog</a>
-        <a href="watch.html" class="tautan-menu aktif" aria-current="page">Tonton</a>
+        <a href="history.html" class="tautan-menu">Riwayat</a>
         <a href="subscription.html" class="tautan-menu">Langganan</a>
       </nav>
 
@@ -32,32 +32,12 @@
       </form>
 
       <div class="aksi-atas">
-        <a href="watch.html" class="tautan-ikon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
-            <circle cx="12" cy="12" r="8.5"></circle>
-            <path d="M12 7.5v5l3.2 2"></path>
-          </svg>
-          <span class="label-ikon">Riwayat</span>
-        </a>
-        <a href="catalog.html" class="tautan-ikon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
-            <path d="M6 4h12v16l-6-4-6 4V4z"></path>
-          </svg>
-          <span class="titik-notif" aria-hidden="true">4</span>
-          <span class="label-ikon">Favorit</span>
-        </a>
-        <a href="subscription.html" class="tautan-ikon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
-            <path d="M4 9l4-4h8l4 4-8 10L4 9z"></path>
-          </svg>
-          <span class="label-ikon">Langganan</span>
-        </a>
-        <a href="login.html" class="tautan-ikon">
+        <a href="../index.html" class="tautan-ikon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
             <circle cx="12" cy="8.5" r="3.5"></circle>
             <path d="M5 19.5c1.5-3.2 4.1-4.8 7-4.8s5.5 1.6 7 4.8"></path>
           </svg>
-          <span class="label-ikon">Masuk</span>
+          <span class="label-ikon">Keluar</span>
         </a>
       </div>
     </div>
@@ -67,18 +47,18 @@
     <section class="panggung-tonton" aria-label="Pemutar video dan daftar episode">
       <div class="wadah">
         <nav class="jalur-navigasi" aria-label="Jalur navigasi">
-          <a href="index.html">Beranda</a>
+          <a href="home.html">Beranda</a>
           <span aria-hidden="true">/</span>
-          <a href="catalog.html">Drama Misteri</a>
+          <a href="catalog/catalog-serial.html">Drama Misteri</a>
           <span aria-hidden="true">/</span>
           <span class="jalur-aktif">Doctor X (Episode 1)</span>
         </nav>
 
         <div class="grid-panggung">
           <div class="area-pemutar">
-            <div class="bingkai-video">
-              <video class="pemutar-utama" controls preload="metadata" poster="assets/images/background.jpg">
-                <source src="assets/videos/trailer.mp4" type="video/mp4">
+            <div id="pemutar-video" class="bingkai-video">
+              <video class="pemutar-utama" controls preload="metadata" poster="../assets/images/background.jpg">
+                <source src="../assets/videos/trailer.mp4" type="video/mp4">
                 Browser kamu tidak mendukung video.
               </video>
             </div>
@@ -94,7 +74,7 @@
               </div>
 
               <div class="aksi-pemutar">
-                <a href="catalog.html" class="tombol tombol-abu tombol-ringkas">
+                <a href="../index.html" class="tombol tombol-abu tombol-ringkas">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <path d="M6 4h12v16l-6-4-6 4V4z"></path>
                   </svg>
@@ -118,12 +98,12 @@
             </div>
 
             <div class="grid-nomor-ep" role="group" aria-label="Pilih nomor episode">
-              <a href="watch.html" class="nomor-ep aktif" aria-current="page">01</a>
-              <a href="watch.html" class="nomor-ep">02</a>
-              <a href="watch.html" class="nomor-ep">03</a>
-              <a href="watch.html" class="nomor-ep">04</a>
-              <a href="watch.html" class="nomor-ep">05</a>
-              <a href="watch.html" class="nomor-ep">06</a>
+              <a href="#pemutar-video" class="nomor-ep aktif" aria-current="page">01</a>
+              <a href="#pemutar-video" class="nomor-ep">02</a>
+              <a href="#pemutar-video" class="nomor-ep">03</a>
+              <a href="#pemutar-video" class="nomor-ep">04</a>
+              <a href="#pemutar-video" class="nomor-ep">05</a>
+              <a href="#pemutar-video" class="nomor-ep">06</a>
               <a href="subscription.html" class="nomor-ep" aria-label="Episode 07 VIP">
                 <span>07</span>
                 <span class="tag-vip-ep">VIP</span>
@@ -136,7 +116,7 @@
                 <span>09</span>
                 <span class="tag-vip-ep">VIP</span>
               </a>
-               <a href="subscription.html" class="nomor-ep" aria-label="Episode 10 VIP">
+              <a href="subscription.html" class="nomor-ep" aria-label="Episode 10 VIP">
                 <span>10</span>
                 <span class="tag-vip-ep">VIP</span>
               </a>
@@ -151,9 +131,9 @@
             </div>
 
             <div class="daftar-episode">
-              <a href="watch.html" class="item-episode aktif" aria-current="page">
+              <a href="#pemutar-video" class="item-episode aktif" aria-current="page">
                 <div class="thumb-episode">
-                  <img src="assets/images/trailer.jpg" alt="">
+                  <img src="../assets/images/trailer.jpg" alt="">
                   <span class="nomor-thumb">EP 01</span>
                 </div>
                 <div class="teks-episode">
@@ -162,9 +142,9 @@
                 </div>
               </a>
 
-              <a href="watch.html" class="item-episode">
+              <a href="#pemutar-video" class="item-episode">
                 <div class="thumb-episode">
-                  <img src="assets/images/trailer.jpg" alt="" loading="lazy">
+                  <img src="../assets/images/trailer.jpg" alt="" loading="lazy">
                   <span class="nomor-thumb">EP 02</span>
                 </div>
                 <div class="teks-episode">
@@ -173,9 +153,9 @@
                 </div>
               </a>
 
-              <a href="watch.html" class="item-episode">
+              <a href="#pemutar-video" class="item-episode">
                 <div class="thumb-episode">
-                  <img src="assets/images/trailer.jpg" alt="" loading="lazy">
+                  <img src="../assets/images/trailer.jpg" alt="" loading="lazy">
                   <span class="nomor-thumb">EP 03</span>
                 </div>
                 <div class="teks-episode">
@@ -184,14 +164,14 @@
                 </div>
               </a>
 
-              <a href="watch.html" class="item-episode">
+              <a href="#pemutar-video" class="item-episode">
                 <div class="thumb-episode">
-                  <img src="assets/images/trailer.jpg" alt="" loading="lazy">
+                  <img src="../assets/images/trailer.jpg" alt="" loading="lazy">
                   <span class="nomor-thumb">EP 04</span>
                 </div>
                 <div class="teks-episode">
                   <span class="judul-episode">4. After a new surgeon arrives at the hospital.</span>
-                  <span class="durasi-episode"> 1 Jam 1 Menit &bull; Gratis</span>
+                  <span class="durasi-episode">1 Jam 1 Menit &bull; Gratis</span>
                 </div>
               </a>
             </div>
@@ -209,7 +189,7 @@
             <div class="baris-meta-tonton">
               <span class="lencana-orisinal">Orisinal</span>
               <span class="lencana-baru">Episode Baru</span>
-              <span class="skor-inline">&#9733; 10.0</span>
+              <span class="skor-inline">&#9733; 9.4</span>
               <span class="pemisah-detail">|</span>
               <span>2026</span>
               <span class="pemisah-detail">|</span>
@@ -219,14 +199,14 @@
             </div>
 
             <div class="daftar-tag-detail">
-              <a href="catalog.html" class="tag-detail">Drama Misteri</a>
-              <a href="catalog.html" class="tag-detail">Thriller</a>
-              <a href="catalog.html" class="tag-detail">Kriminal</a>
+              <a href="catalog/catalog-serial.html" class="tag-detail">Drama Misteri</a>
+              <a href="catalog/catalog-film.html" class="tag-detail">Thriller</a>
+              <a href="catalog/catalog-serial.html" class="tag-detail">Kriminal</a>
             </div>
 
             <div class="sinopsis-lengkap">
-              <p>In a hospital dominated by ego and corruption, 
-                an enigmatic but brilliant surgeon arrives — taking on 
+              <p>In a hospital dominated by ego and corruption,
+                an enigmatic but brilliant surgeon arrives, taking on
                 seemingly impossible cases amid fierce opposition.
               </p>
             </div>
@@ -234,7 +214,7 @@
             <h2 class="subjudul-bagian">Pemeran Utama</h2>
             <div class="grid-pemeran">
               <div class="kartu-pemeran">
-                <img src="assets/images/profile.jpg" alt="Foto Kim Ji-won" class="foto-pemeran">
+                <img src="../assets/images/profile.jpg" alt="Foto Kim Ji-won" class="foto-pemeran">
                 <div class="info-pemeran">
                   <p class="nama-pemeran">Kim Ji-won</p>
                   <p class="peran-pemeran">sebagai Gye Su-jeong</p>
@@ -242,7 +222,7 @@
               </div>
 
               <div class="kartu-pemeran">
-                <img src="assets/images/profile.jpg" alt="Foto Lee Jung-eun" class="foto-pemeran">
+                <img src="../assets/images/profile.jpg" alt="Foto Lee Jung-eun" class="foto-pemeran">
                 <div class="info-pemeran">
                   <p class="nama-pemeran">Lee Jung-eun</p>
                   <p class="peran-pemeran">Sebagai Jeong Hee-sook</p>
@@ -250,7 +230,7 @@
               </div>
 
               <div class="kartu-pemeran">
-                <img src="assets/images/profile.jpg" alt="Foto Kim Woo-seok" class="foto-pemeran">
+                <img src="../assets/images/profile.jpg" alt="Foto Kim Woo-seok" class="foto-pemeran">
                 <div class="info-pemeran">
                   <p class="nama-pemeran">Kim Woo-seok</p>
                   <p class="peran-pemeran">Sebagai Park Tae-Kyeong</p>
@@ -258,7 +238,7 @@
               </div>
 
               <div class="kartu-pemeran">
-                <img src="assets/images/profile.jpg" alt="Foto Son Hyun-joo" class="foto-pemeran">
+                <img src="../assets/images/profile.jpg" alt="Foto Son Hyun-joo" class="foto-pemeran">
                 <div class="info-pemeran">
                   <p class="nama-pemeran">Son Hyun-joo</p>
                   <p class="peran-pemeran">sebagai Seung-gwon</p>
@@ -317,10 +297,10 @@
           <div class="kotak-panel kotak-skor">
             <div>
               <div class="skor-besar">
-                <span class="angka-skor">.0</span>
+                <span class="angka-skor">9.4</span>
                 <span class="maks-skor">/ 10</span>
               </div>
-              <p class="bintang-skor" aria-label="Skor rata-rata 4.5 dari 5 bintang">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+              <p class="bintang-skor" aria-label="Skor rata-rata 4.7 dari 5 bintang">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
               <p class="total-penilai">Dari 14.280 ulasan penonton</p>
             </div>
 
@@ -353,7 +333,7 @@
             </div>
           </div>
 
-          <form action="watch.html" method="get" class="kotak-panel form-ulasan">
+          <form action="../index.html" method="get" class="kotak-panel form-ulasan">
             <div>
               <h3 class="judul-form-ulasan">Tulis Ulasan Episode Ini</h3>
 
@@ -385,7 +365,7 @@
           <article class="kotak-panel kartu-ulasan">
             <div class="kepala-ulasan">
               <div class="pengulas">
-                <img src="assets/images/profile.jpg" alt="" class="avatar-ulasan">
+                <img src="../assets/images/profile.jpg" alt="" class="avatar-ulasan">
                 <div>
                   <h3 class="nama-pengulas">Nadia Kusuma</h3>
                   <p class="tanggal-ulasan">16 Nov 2026</p>
@@ -399,7 +379,7 @@
           <article class="kotak-panel kartu-ulasan">
             <div class="kepala-ulasan">
               <div class="pengulas">
-                <img src="assets/images/profile.jpg" alt="" class="avatar-ulasan">
+                <img src="../assets/images/profile.jpg" alt="" class="avatar-ulasan">
                 <div>
                   <h3 class="nama-pengulas">Rizky Ramadhan</h3>
                   <p class="tanggal-ulasan">15 Nov 2026</p>
@@ -413,7 +393,7 @@
           <article class="kotak-panel kartu-ulasan">
             <div class="kepala-ulasan">
               <div class="pengulas">
-                <img src="assets/images/profile.jpg" alt="" class="avatar-ulasan">
+                <img src="../assets/images/profile.jpg" alt="" class="avatar-ulasan">
                 <div>
                   <h3 class="nama-pengulas">Tari Wijaya</h3>
                   <p class="tanggal-ulasan">14 Nov 2026</p>
@@ -442,7 +422,7 @@
         <div class="grid-kartu">
           <a href="watch.html" class="kartu-poster">
             <div class="kotak-poster">
-              <img src="assets/images/movies/genre_misteri/the_mentalist.jpeg" alt="" loading="lazy">
+              <img src="../assets/images/movies/genre_misteri/the_mentalist.jpeg" alt="" loading="lazy">
               <span class="lencana-simpan" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M6 4h12v16l-6-4-6 4V4z"></path>
@@ -455,7 +435,7 @@
 
           <a href="watch.html" class="kartu-poster">
             <div class="kotak-poster">
-              <img src="assets/images/movies/genre_misteri/wednesday.png" alt="" loading="lazy">
+              <img src="../assets/images/movies/genre_misteri/wednesday.png" alt="" loading="lazy">
               <span class="lencana-simpan" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M6 4h12v16l-6-4-6 4V4z"></path>
@@ -468,7 +448,7 @@
 
           <a href="watch.html" class="kartu-poster">
             <div class="kotak-poster">
-              <img src="assets/images/movies/genre_aksi/the_odyssey.png" alt="" loading="lazy">
+              <img src="../assets/images/movies/genre_aksi/the_odyssey.png" alt="" loading="lazy">
               <span class="lencana-simpan" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M6 4h12v16l-6-4-6 4V4z"></path>
@@ -481,7 +461,7 @@
 
           <a href="watch.html" class="kartu-poster">
             <div class="kotak-poster">
-              <img src="assets/images/movies/genre_aksi/teach_you_a_lesson.png" alt="" loading="lazy">
+              <img src="../assets/images/movies/genre_aksi/teach_you_a_lesson.png" alt="" loading="lazy">
               <span class="lencana-simpan" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M6 4h12v16l-6-4-6 4V4z"></path>
@@ -494,7 +474,7 @@
 
           <a href="watch.html" class="kartu-poster">
             <div class="kotak-poster">
-              <img src="assets/images/movies/genre_thriller/squid_game.jpg" alt="" loading="lazy">
+              <img src="../assets/images/movies/genre_thriller/squid_game.jpg" alt="" loading="lazy">
               <span class="lencana-simpan" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M6 4h12v16l-6-4-6 4V4z"></path>
@@ -507,7 +487,7 @@
 
           <a href="watch.html" class="kartu-poster">
             <div class="kotak-poster">
-              <img src="assets/images/movies/genre_thriller/obsession.png" alt="" loading="lazy">
+              <img src="../assets/images/movies/genre_thriller/obsession.png" alt="" loading="lazy">
               <span class="lencana-simpan" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M6 4h12v16l-6-4-6 4V4z"></path>
@@ -529,20 +509,20 @@
         <p class="subjudul-komunitas">Ikuti <span class="teks-sorot">STREAMING</span> untuk info rilis film dan serial terbaru</p>
 
         <div class="daftar-sosial">
-          <a href="catalog.html" class="tombol-sosial">
+          <a href="https://t.me/" target="_blank" rel="noopener noreferrer" class="tombol-sosial">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
               <path d="M21 5L3 12l6.5 2.4L18 7l-6.2 8.7 5.7 3.8L21 5z"></path>
             </svg>
             <span>Telegram</span>
           </a>
-          <a href="watch.html" class="tombol-sosial">
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="tombol-sosial">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
               <rect x="3" y="6" width="18" height="12" rx="3"></rect>
               <polygon points="10,9.5 15.5,12 10,14.5" fill="currentColor" stroke="none"></polygon>
             </svg>
             <span>YouTube</span>
           </a>
-          <a href="subscription.html" class="tombol-sosial">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="tombol-sosial">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
               <rect x="4" y="4" width="16" height="16" rx="4"></rect>
               <circle cx="12" cy="12" r="3.5"></circle>
@@ -556,48 +536,48 @@
         <div class="kolom-footer">
           <h3>Tentang STREAMING</h3>
           <ul class="daftar-link-footer">
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="catalog.html">Katalog Film</a></li>
-            <li><a href="watch.html">Pemutar Video</a></li>
-            <li><a href="subscription.html">Paket Langganan</a></li>
+            <li><a href="home.html#utama">Beranda</a></li>
+            <li><a href="catalog.html#judul-katalog">Katalog Film</a></li>
+            <li><a href="watch.html#judul-tonton">Pemutar Video</a></li>
+            <li><a href="subscription.html#judul-langganan">Paket Langganan</a></li>
           </ul>
         </div>
 
         <div class="kolom-footer">
           <h3>Kategori</h3>
           <ul class="daftar-link-footer">
-            <li><a href="catalog.html">Rilis Terbaru</a></li>
-            <li><a href="catalog.html">Film Populer</a></li>
-            <li><a href="catalog.html">Anime Pilihan</a></li>
-            <li><a href="catalog.html">Serial TV Terbaik</a></li>
+            <li><a href="home.html#judul-terbaru">Rilis Terbaru</a></li>
+            <li><a href="home.html#judul-populer">Film Populer</a></li>
+            <li><a href="home.html#judul-anime">Anime Pilihan</a></li>
+            <li><a href="home.html#judul-serial">Serial TV Terbaik</a></li>
           </ul>
         </div>
 
         <div class="kolom-footer">
           <h3>Bantuan</h3>
           <ul class="daftar-link-footer">
-            <li><a href="login.html">Masuk Akun</a></li>
-            <li><a href="subscription.html">Cara Berlangganan</a></li>
-            <li><a href="watch.html">Riwayat Tontonan</a></li>
-            <li><a href="catalog.html">Pertanyaan Umum</a></li>
+            <li><a href="../index.html#utama">Masuk Akun</a></li>
+            <li><a href="subscription.html#form-langganan">Cara Berlangganan</a></li>
+            <li><a href="history.html#utama">Riwayat Tontonan</a></li>
+            <li><a href="subscription.html#judul-faq">Pertanyaan Umum</a></li>
           </ul>
         </div>
 
         <div class="kolom-footer">
           <h3>Layanan</h3>
           <ul class="daftar-link-footer">
-            <li><a href="subscription.html">Kebijakan Privasi</a></li>
-            <li><a href="subscription.html">Syarat Penggunaan</a></li>
+            <li><a href="subscription.html#kebijakan-privasi">Kebijakan Privasi</a></li>
+            <li><a href="subscription.html#syarat-penggunaan">Syarat Penggunaan</a></li>
           </ul>
         </div>
 
-        <div class="pil-bahasa" aria-label="Bahasa aktif">
+        <a href="#utama" class="pil-bahasa" aria-label="Bahasa Indonesia aktif - Kembali ke atas">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
             <circle cx="12" cy="12" r="9"></circle>
             <path d="M3 12h18M12 3c2.8 2.6 4.2 5.6 4.2 9s-1.4 6.4-4.2 9c-2.8-2.6-4.2-5.6-4.2-9S9.2 5.6 12 3z"></path>
           </svg>
           <span>Bahasa Indonesia</span>
-        </div>
+        </a>
       </div>
 
       <div class="bawah-footer">

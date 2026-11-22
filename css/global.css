@@ -243,23 +243,6 @@ ol {
   height: 18px;
 }
 
-.titik-notif {
-  position: absolute;
-  top: -3px;
-  right: 2px;
-  min-width: 15px;
-  height: 15px;
-  padding: 0 4px;
-  border-radius: var(--radius-pil);
-  background-color: var(--warna-utama);
-  color: var(--teks-utama);
-  font-size: 0.62rem;
-  font-weight: 700;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /* baris konten dan grid kartu poster */
 .baris-konten {
   padding: 20px 0;
@@ -492,7 +475,7 @@ ol {
   color: var(--teks-utama);
 }
 
-/* panel dan form untuk halaman tim */
+/* panel dan form */
 .kotak-panel {
   padding: 24px;
   border-radius: var(--radius-sedang);
@@ -641,6 +624,13 @@ ol {
   gap: 8px;
   white-space: nowrap;
   align-self: flex-start;
+  transition: background-color var(--transisi), border-color var(--transisi), color var(--transisi);
+}
+
+.pil-bahasa:hover {
+  background-color: var(--bg-hover);
+  border-color: var(--garis-sedang);
+  color: var(--teks-utama);
 }
 
 .pil-bahasa svg {
@@ -738,11 +728,6 @@ ol {
 
   .tautan-ikon .label-ikon {
     display: none;
-  }
-
-  .titik-notif {
-    top: -4px;
-    right: -6px;
   }
 
   .grid-kartu {

@@ -1,14 +1,8 @@
-/* stylesheet halaman masuk akun */
+/* stylesheet halaman masuk dan daftar akun */
 
-/* sorot ikon masuk aktif di bilah atas */
-.tautan-ikon.aktif {
-  color: var(--warna-utama);
-  font-weight: 600;
-}
-
-/* latar dan pembungkus halaman login */
+/* latar dan pembungkus halaman masuk dan daftar */
 .seksi-login {
-  min-height: calc(100vh - 64px);
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,6 +80,14 @@
   margin-bottom: 18px;
   font-size: 0.8rem;
   color: var(--teks-redup);
+}
+
+.pesan-error {
+  margin-top: -6px;
+  margin-bottom: 14px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #f87171;
 }
 
 .tombol-penuh {
@@ -168,6 +170,136 @@
 .tautan-merah:hover {
   color: #ff424d;
   text-decoration: underline;
+}
+
+/* halaman masuk dan daftar sosial */
+.kepala-provider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--garis-tipis);
+}
+
+.ikon-provider-besar {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.judul-provider {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--teks-utama);
+}
+
+.sub-provider {
+  margin-top: 2px;
+  font-size: 0.78rem;
+  color: var(--teks-redup);
+}
+
+.daftar-akun-sosial {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.kartu-akun {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--garis-tipis);
+  transition: background-color var(--transisi), border-color var(--transisi);
+}
+
+.kartu-akun:hover {
+  background-color: var(--bg-hover);
+  border-color: var(--warna-utama);
+}
+
+.inisial-akun {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--warna-utama);
+  color: var(--teks-utama);
+  font-size: 0.9rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.inisial-akun-biru {
+  background-color: #2563eb;
+}
+
+.avatar-akun {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--garis-sedang);
+  flex-shrink: 0;
+}
+
+.info-akun {
+  flex: 1;
+  min-width: 0;
+}
+
+.nama-akun {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--teks-utama);
+}
+
+.email-akun {
+  font-size: 0.76rem;
+  color: var(--teks-redup);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ikon-lanjut-akun {
+  width: 16px;
+  height: 16px;
+  color: var(--teks-redup);
+  flex-shrink: 0;
+}
+
+.kotak-izin-masuk {
+  padding: 13px 14px;
+  border-radius: 8px;
+  background-color: #111315;
+  border: 1px solid var(--garis-tipis);
+  margin-bottom: 16px;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--teks-sekunder);
+}
+
+.grup-aksi-sosial {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tombol-facebook {
+  background-color: #1877f2;
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(24, 119, 242, 0.32);
+}
+
+.tombol-facebook:hover {
+  background-color: #166fe5;
 }
 
 /* tampilan responsif */

@@ -1,11 +1,5 @@
 /* stylesheet halaman paket langganan */
 
-/* sorot ikon langganan aktif di bilah atas */
-.tautan-ikon.aktif {
-  color: var(--warna-utama);
-  font-weight: 600;
-}
-
 /* kepala halaman langganan */
 .kepala-langganan {
   padding: 52px 0 38px;
@@ -400,6 +394,23 @@
   color: var(--teks-utama);
 }
 
+/* bagian kebijakan dan syarat penggunaan */
+.seksi-legal {
+  padding: 20px 0 8px;
+}
+
+.grid-legal {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.teks-legal {
+  font-size: 0.84rem;
+  line-height: 1.6;
+  color: var(--teks-sekunder);
+}
+
 .panel-pembayaran {
   display: flex;
   flex-direction: column;
@@ -492,7 +503,7 @@
   color: var(--teks-redup);
 }
 
-/* seksi tanya jawab faq dengan details bawaan */
+/* seksi tanya jawab faq */
 .seksi-faq {
   padding: 28px 0 12px;
 }
@@ -500,64 +511,25 @@
 .daftar-faq {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
+  gap: 16px;
 }
 
 .item-faq {
-  padding: 0;
-  overflow: hidden;
-  transition: border-color var(--transisi);
-}
-
-.item-faq[open] {
-  border-color: rgba(229, 9, 20, 0.55);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .tanya-faq {
-  padding: 16px 20px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--teks-utama);
-  cursor: pointer;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.tanya-faq::-webkit-details-marker {
-  display: none;
-}
-
-.tanya-faq::after {
-  content: "+";
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: #111315;
-  border: 1px solid var(--garis-tipis);
-  color: var(--teks-sekunder);
-  font-size: 0.95rem;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.item-faq[open] .tanya-faq::after {
-  content: "-";
-  background-color: var(--warna-utama);
-  border-color: var(--warna-utama);
+  font-size: 0.94rem;
+  font-weight: 700;
   color: var(--teks-utama);
 }
 
 .jawab-faq {
-  padding: 0 20px 18px;
   font-size: 0.84rem;
   line-height: 1.6;
-  color: var(--teks-redup);
+  color: var(--teks-sekunder);
 }
 
 /* tampilan responsif */
@@ -578,7 +550,8 @@
 
   .strip-keuntungan,
   .grid-aktivasi,
-  .daftar-faq {
+  .daftar-faq,
+  .grid-legal {
     grid-template-columns: 1fr;
   }
 }

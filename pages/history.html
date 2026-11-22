@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watchana | Riwayat Tontonan</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/history.css">
+</head>
+
+<body>
+  <a href="#utama" class="skip-link">Lewati ke konten utama</a>
+
+  <header class="bilah-atas">
+    <div class="wadah isi-header">
+      <a href="home.html" class="logo-merek">STREAMING</a>
+
+      <nav class="menu-atas" aria-label="Navigasi utama">
+        <a href="home.html" class="tautan-menu">Beranda</a>
+        <a href="catalog.html" class="tautan-menu">Katalog</a>
+        <a href="history.html" class="tautan-menu aktif" aria-current="page">Riwayat</a>
+        <a href="subscription.html" class="tautan-menu">Langganan</a>
+      </nav>
+
+      <form action="catalog.html" method="get" class="kotak-cari" role="search">
+        <input type="search" name="q" placeholder="Cari film atau serial..." aria-label="Cari film atau serial">
+        <button type="submit" aria-label="Cari">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="6.5"></circle>
+            <path d="M16 16l4.2 4.2"></path>
+          </svg>
+        </button>
+      </form>
+
+      <div class="aksi-atas">
+        <a href="../index.html" class="tautan-ikon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+            <circle cx="12" cy="8.5" r="3.5"></circle>
+            <path d="M5 19.5c1.5-3.2 4.1-4.8 7-4.8s5.5 1.6 7 4.8"></path>
+          </svg>
+          <span class="label-ikon">Keluar</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="utama">
+    <section class="kepala-riwayat" aria-labelledby="judul-riwayat">
+      <div class="wadah">
+        <span class="label-riwayat">AKTIVITAS TONTONAN</span>
+        <h1 id="judul-riwayat" class="judul-halaman-riwayat">Riwayat Tontonan</h1>
+        <p class="subjudul-riwayat">Lanjutkan episode terakhir yang kamu tonton atau putar ulang tayangan yang sudah selesai.</p>
+
+        <nav class="daftar-filter filter-riwayat" aria-label="Navigasi bagian riwayat">
+          <a href="#lanjut-tonton" class="pil-filter aktif" aria-current="page">Terakhir Diputar</a>
+          <a href="#sedang-ditonton" class="pil-filter">Sedang Ditonton</a>
+          <a href="#selesai-ditonton" class="pil-filter">Selesai Ditonton</a>
+          <a href="catalog.html" class="pil-filter">Jelajahi Katalog</a>
+        </nav>
+      </div>
+    </section>
+
+    <section id="lanjut-tonton" class="seksi-lanjut" aria-label="Tayangan terakhir diputar">
+      <div class="wadah">
+        <article class="kotak-panel kartu-lanjut">
+          <div class="bingkai-lanjut">
+            <img src="../assets/images/trailer.jpg" alt="Cuplikan Doctor X Episode 1">
+            <span class="lencana-lanjut">Terakhir Diputar</span>
+          </div>
+
+          <div class="isi-lanjut">
+            <p class="meta-waktu-lanjut">Hari ini, 14:20 WIB &bull; Episode 1 dari 12</p>
+            <h2 class="judul-lanjut">Doctor X - On her first day at the hospital.</h2>
+            <p class="ket-lanjut">Gye Su-jeong menghadapi kasus darurat pertamanya di ruang operasi saat seluruh staf rumah sakit mempertanyakan masa lalunya.</p>
+
+            <div class="blok-progres">
+              <div class="info-progres">
+                <span>Menit ke-28 dari 66 menit</span>
+                <span>42% selesai</span>
+              </div>
+              <div class="jalur-progres">
+                <span class="isi-progres progres-42"></span>
+              </div>
+            </div>
+
+            <div class="aksi-lanjut">
+              <a href="watch.html#pemutar-video" class="tombol tombol-merah">Lanjutkan Episode 1</a>
+              <a href="watch.html#judul-tonton" class="tombol tombol-abu">Lihat Daftar Episode</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="sedang-ditonton" class="baris-konten" aria-labelledby="judul-sedang">
+      <div class="wadah">
+        <div class="kepala-baris">
+          <h2 id="judul-sedang" class="judul-baris">Sedang Ditonton</h2>
+          <a href="catalog.html" class="tautan-semua">
+            <span>Buka Katalog</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="9 6 15 12 9 18"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <div class="grid-riwayat">
+          <article class="kotak-panel kartu-riwayat">
+            <div class="poster-riwayat">
+              <img src="../assets/images/movies/genre_thriller/squid_game.jpg" alt="" loading="lazy">
+            </div>
+            <div class="detail-riwayat">
+              <div class="atas-riwayat">
+                <span class="genre-riwayat">Thriller</span>
+                <span class="waktu-riwayat">Kemarin</span>
+              </div>
+              <h3 class="judul-item-riwayat">Squid Game</h3>
+              <p class="sub-item-riwayat">Episode 04 &bull; Stick to the Team</p>
+              <div class="blok-progres">
+                <div class="info-progres">
+                  <span>34 / 49 menit</span>
+                  <span>70%</span>
+                </div>
+                <div class="jalur-progres">
+                  <span class="isi-progres progres-70"></span>
+                </div>
+              </div>
+              <div class="bawah-riwayat">
+                <a href="watch.html" class="tombol tombol-merah tombol-lanjut-kecil">Lanjutkan</a>
+                <a href="catalog/catalog-serial.html" class="tautan-semua">Serial TV</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="kotak-panel kartu-riwayat">
+            <div class="poster-riwayat">
+              <img src="../assets/images/movies/genre_aksi/attack_on_titan.jpeg" alt="" loading="lazy">
+            </div>
+            <div class="detail-riwayat">
+              <div class="atas-riwayat">
+                <span class="genre-riwayat">Anime</span>
+                <span class="waktu-riwayat">2 hari lalu</span>
+              </div>
+              <h3 class="judul-item-riwayat">Attack On Titan</h3>
+              <p class="sub-item-riwayat">Episode 09 &bull; Whereabouts of His Left Arm</p>
+              <div class="blok-progres">
+                <div class="info-progres">
+                  <span>20 / 24 menit</span>
+                  <span>84%</span>
+                </div>
+                <div class="jalur-progres">
+                  <span class="isi-progres progres-84"></span>
+                </div>
+              </div>
+              <div class="bawah-riwayat">
+                <a href="watch.html" class="tombol tombol-merah tombol-lanjut-kecil">Lanjutkan</a>
+                <a href="catalog/catalog-anime.html" class="tautan-semua">Anime</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="kotak-panel kartu-riwayat">
+            <div class="poster-riwayat">
+              <img src="../assets/images/movies/genre_fiksi_ilmiah/interstellar_poster.jpg" alt="" loading="lazy">
+            </div>
+            <div class="detail-riwayat">
+              <div class="atas-riwayat">
+                <span class="genre-riwayat">Fiksi Ilmiah</span>
+                <span class="waktu-riwayat">3 hari lalu</span>
+              </div>
+              <h3 class="judul-item-riwayat">Interstellar</h3>
+              <p class="sub-item-riwayat">Film &bull; 2014</p>
+              <div class="blok-progres">
+                <div class="info-progres">
+                  <span>98 / 169 menit</span>
+                  <span>58%</span>
+                </div>
+                <div class="jalur-progres">
+                  <span class="isi-progres progres-58"></span>
+                </div>
+              </div>
+              <div class="bawah-riwayat">
+                <a href="watch.html" class="tombol tombol-merah tombol-lanjut-kecil">Lanjutkan</a>
+                <a href="catalog/catalog-film.html" class="tautan-semua">Film</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="kotak-panel kartu-riwayat">
+            <div class="poster-riwayat">
+              <img src="../assets/images/movies/genre_misteri/wednesday.png" alt="" loading="lazy">
+            </div>
+            <div class="detail-riwayat">
+              <div class="atas-riwayat">
+                <span class="genre-riwayat">Misteri</span>
+                <span class="waktu-riwayat">4 hari lalu</span>
+              </div>
+              <h3 class="judul-item-riwayat">Wednesday</h3>
+              <p class="sub-item-riwayat">Episode 02 &bull; Woe Is the Loneliest Number</p>
+              <div class="blok-progres">
+                <div class="info-progres">
+                  <span>14 / 48 menit</span>
+                  <span>28%</span>
+                </div>
+                <div class="jalur-progres">
+                  <span class="isi-progres progres-28"></span>
+                </div>
+              </div>
+              <div class="bawah-riwayat">
+                <a href="watch.html" class="tombol tombol-merah tombol-lanjut-kecil">Lanjutkan</a>
+                <a href="catalog/catalog-serial.html" class="tautan-semua">Serial TV</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="kotak-panel kartu-riwayat">
+            <div class="poster-riwayat">
+              <img src="../assets/images/movies/genre_aksi/jujutsu_kaisen_anime.png" alt="" loading="lazy">
+            </div>
+            <div class="detail-riwayat">
+              <div class="atas-riwayat">
+                <span class="genre-riwayat">Aksi</span>
+                <span class="waktu-riwayat">5 hari lalu</span>
+              </div>
+              <h3 class="judul-item-riwayat">Jujutsu Kaisen</h3>
+              <p class="sub-item-riwayat">Episode 18 &bull; Sage</p>
+              <div class="blok-progres">
+                <div class="info-progres">
+                  <span>22 / 24 menit</span>
+                  <span>92%</span>
+                </div>
+                <div class="jalur-progres">
+                  <span class="isi-progres progres-92"></span>
+                </div>
+              </div>
+              <div class="bawah-riwayat">
+                <a href="watch.html" class="tombol tombol-merah tombol-lanjut-kecil">Lanjutkan</a>
+                <a href="catalog/catalog-anime.html" class="tautan-semua">Anime</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="kotak-panel kartu-riwayat">
+            <div class="poster-riwayat">
+              <img src="../assets/images/movies/genre_fiksi_sejarah/laut_bercerita.png" alt="" loading="lazy">
+            </div>
+            <div class="detail-riwayat">
+              <div class="atas-riwayat">
+                <span class="genre-riwayat">Fiksi Sejarah</span>
+                <span class="waktu-riwayat">Pekan lalu</span>
+              </div>
+              <h3 class="judul-item-riwayat">Laut Bercerita</h3>
+              <p class="sub-item-riwayat">Film &bull; 2026</p>
+              <div class="blok-progres">
+                <div class="info-progres">
+                  <span>52 / 124 menit</span>
+                  <span>42%</span>
+                </div>
+                <div class="jalur-progres">
+                  <span class="isi-progres progres-42"></span>
+                </div>
+              </div>
+              <div class="bawah-riwayat">
+                <a href="watch.html" class="tombol tombol-merah tombol-lanjut-kecil">Lanjutkan</a>
+                <a href="catalog/catalog-film.html" class="tautan-semua">Film</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="selesai-ditonton" class="baris-konten" aria-labelledby="judul-selesai">
+      <div class="wadah">
+        <div class="kepala-baris">
+          <h2 id="judul-selesai" class="judul-baris">Selesai Ditonton</h2>
+          <a href="catalog.html" class="tautan-semua">
+            <span>Tonton Lagi</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="9 6 15 12 9 18"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <div class="grid-kartu">
+          <a href="watch.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="../assets/images/movies/genre_romansa/dilan_1991.png" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span class="lencana-genre">Selesai</span>
+            </div>
+            <h3 class="judul-poster">Dilan 1991</h3>
+            <p class="ket-selesai">121 Menit &bull; Tonton Ulang</p>
+          </a>
+
+          <a href="watch.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="../assets/images/movies/genre_romansa/sore.png" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span class="lencana-genre">Selesai</span>
+            </div>
+            <h3 class="judul-poster">Sore: Istri dari Masa Depan</h3>
+            <p class="ket-selesai">114 Menit &bull; Tonton Ulang</p>
+          </a>
+
+          <a href="watch.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="../assets/images/movies/genre_romansa/your_name_anime.png" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span class="lencana-genre">Selesai</span>
+            </div>
+            <h3 class="judul-poster">Kimi no Na Wa (Your Name)</h3>
+            <p class="ket-selesai">106 Menit &bull; Tonton Ulang</p>
+          </a>
+
+          <a href="watch.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="../assets/images/movies/genre_thriller/pengepungan_di_bukit_duri.jpg" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span class="lencana-genre">Selesai</span>
+            </div>
+            <h3 class="judul-poster">Pengepungan di Bukit Duri</h3>
+            <p class="ket-selesai">118 Menit &bull; Tonton Ulang</p>
+          </a>
+
+          <a href="watch.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="../assets/images/movies/genre_horor/ghost_in_the_cell.jpeg" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span class="lencana-genre">Selesai</span>
+            </div>
+            <h3 class="judul-poster">Ghost In The Cell</h3>
+            <p class="ket-selesai">106 Menit &bull; Tonton Ulang</p>
+          </a>
+
+          <a href="watch.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="../assets/images/movies/film_dokumenter/pesta_babi.jpeg" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span class="lencana-genre">Selesai</span>
+            </div>
+            <h3 class="judul-poster">Pesta Babi: Kolonialisme di Zaman Kita</h3>
+            <p class="ket-selesai">96 Menit &bull; Tonton Ulang</p>
+          </a>
+        </div>
+
+        <div class="tengah-tombol">
+          <a href="catalog.html" class="tombol tombol-abu">Jelajahi Tayangan Lainnya</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-utama">
+    <div class="wadah">
+      <div class="komunitas-footer">
+        <h2 class="judul-komunitas">Nikmati Pengalaman Menonton Terbaik</h2>
+        <p class="subjudul-komunitas">Ikuti <span class="teks-sorot">STREAMING</span> untuk info rilis film dan serial terbaru</p>
+
+        <div class="daftar-sosial">
+          <a href="https://t.me/" target="_blank" rel="noopener noreferrer" class="tombol-sosial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M21 5L3 12l6.5 2.4L18 7l-6.2 8.7 5.7 3.8L21 5z"></path>
+            </svg>
+            <span>Telegram</span>
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="tombol-sosial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <rect x="3" y="6" width="18" height="12" rx="3"></rect>
+              <polygon points="10,9.5 15.5,12 10,14.5" fill="currentColor" stroke="none"></polygon>
+            </svg>
+            <span>YouTube</span>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="tombol-sosial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+              <circle cx="12" cy="12" r="3.5"></circle>
+            </svg>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="grid-footer">
+        <div class="kolom-footer">
+          <h3>Tentang STREAMING</h3>
+          <ul class="daftar-link-footer">
+            <li><a href="home.html#utama">Beranda</a></li>
+            <li><a href="catalog.html#judul-katalog">Katalog Film</a></li>
+            <li><a href="watch.html#judul-tonton">Pemutar Video</a></li>
+            <li><a href="subscription.html#judul-langganan">Paket Langganan</a></li>
+          </ul>
+        </div>
+
+        <div class="kolom-footer">
+          <h3>Kategori</h3>
+          <ul class="daftar-link-footer">
+            <li><a href="home.html#judul-terbaru">Rilis Terbaru</a></li>
+            <li><a href="home.html#judul-populer">Film Populer</a></li>
+            <li><a href="home.html#judul-anime">Anime Pilihan</a></li>
+            <li><a href="home.html#judul-serial">Serial TV Terbaik</a></li>
+          </ul>
+        </div>
+
+        <div class="kolom-footer">
+          <h3>Bantuan</h3>
+          <ul class="daftar-link-footer">
+            <li><a href="../index.html#utama">Masuk Akun</a></li>
+            <li><a href="subscription.html#form-langganan">Cara Berlangganan</a></li>
+            <li><a href="history.html#utama">Riwayat Tontonan</a></li>
+            <li><a href="subscription.html#judul-faq">Pertanyaan Umum</a></li>
+          </ul>
+        </div>
+
+        <div class="kolom-footer">
+          <h3>Layanan</h3>
+          <ul class="daftar-link-footer">
+            <li><a href="subscription.html#kebijakan-privasi">Kebijakan Privasi</a></li>
+            <li><a href="subscription.html#syarat-penggunaan">Syarat Penggunaan</a></li>
+          </ul>
+        </div>
+
+        <a href="#utama" class="pil-bahasa" aria-label="Bahasa Indonesia aktif - Kembali ke atas">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M3 12h18M12 3c2.8 2.6 4.2 5.6 4.2 9s-1.4 6.4-4.2 9c-2.8-2.6-4.2-5.6-4.2-9S9.2 5.6 12 3z"></path>
+          </svg>
+          <span>Bahasa Indonesia</span>
+        </a>
+      </div>
+
+      <div class="bawah-footer">
+        <p>Hak Cipta &copy; 2026 STREAMING. Seluruh hak dilindungi.</p>
+        <p>Platform streaming hiburan karya <strong>Tim Jujur Janggal</strong>.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
