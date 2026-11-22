@@ -40,15 +40,15 @@
 }
 
 .ikon-merek-masuk {
-  width: 38px;
-  height: 38px;
+  height: 60px;
+  width: auto;
+  max-width: 180px;
   border-radius: 10px;
-  background: linear-gradient(145deg, var(--warna-utama), #99060d);
-  color: var(--teks-utama);
+  object-fit: contain;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 22px rgba(229, 9, 20, 0.35);
+  box-shadow: 0 8px 22px rgba(229, 9, 20, 0.28);
 }
 
 .ikon-merek-masuk svg {

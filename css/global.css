@@ -136,6 +136,15 @@ ol {
   letter-spacing: 0.02em;
   color: var(--warna-utama);
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo-merek img {
+  height: 60px;
+  width: 150px;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
 .menu-atas {
@@ -712,6 +721,11 @@ ol {
 @media (max-width: 539px) {
   .logo-merek {
     font-size: 1.2rem;
+  }
+
+  .logo-merek img {
+    height: 44px;
+    width: auto;
   }
 
   .menu-atas {
