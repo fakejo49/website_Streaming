@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watchana | Attack On Titan</title>
+  <link rel="stylesheet" href="../../css/global.css">
+  <link rel="stylesheet" href="../../css/watch.css">
+</head>
+<body>
+  <a href="#utama" class="skip-link">Lewati ke konten utama</a>
+
+  <header class="bilah-atas">
+    <div class="wadah isi-header">
+      <a href="../home.html" class="logo-merek"><img src="../../assets/images/logo2.png" alt="Watchana"></a>
+
+      <nav class="menu-atas" aria-label="Navigasi utama">
+        <a href="../home.html" class="tautan-menu">Beranda</a>
+        <a href="../catalog.html" class="tautan-menu">Katalog</a>
+        <a href="../history.html" class="tautan-menu">Riwayat</a>
+        <a href="../subscription.html" class="tautan-menu">Langganan</a>
+      </nav>
+
+      <form action="../catalog.html" method="get" class="kotak-cari" role="search">
+        <input type="search" name="q" placeholder="Cari film atau serial..." aria-label="Cari film atau serial">
+        <button type="submit" aria-label="Cari">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="6.5"></circle>
+            <path d="M16 16l4.2 4.2"></path>
+          </svg>
+        </button>
+      </form>
+
+      <div class="aksi-atas">
+        <a href="../../index.html" class="tautan-ikon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+            <circle cx="12" cy="8.5" r="3.5"></circle>
+            <path d="M5 19.5c1.5-3.2 4.1-4.8 7-4.8s5.5 1.6 7 4.8"></path>
+          </svg>
+          <span class="label-ikon">Keluar</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="utama">
+    <section class="panggung-tonton" aria-label="Pemutar video dan informasi tayangan">
+      <div class="wadah">
+        <nav class="jalur-navigasi" aria-label="Jalur navigasi">
+          <a href="../home.html">Beranda</a>
+          <span aria-hidden="true">/</span>
+          <a href="../catalog/catalog-anime.html">Anime</a>
+          <span aria-hidden="true">/</span>
+          <span class="jalur-aktif">Attack On Titan</span>
+        </nav>
+
+        <div class="grid-panggung">
+          <div class="area-pemutar">
+            <div id="pemutar-video" class="bingkai-video">
+              <video class="pemutar-utama" controls preload="metadata" poster="../../assets/images/movies/genre_aksi/attack_on_titan.jpeg">
+                <source src="../../assets/videos/Attack_On_Titan_S1.mp4" type="video/mp4">
+                Browser kamu tidak mendukung video.
+              </video>
+            </div>
+
+            <div class="bilah-pemutar">
+              <div class="status-putar">
+                <span class="titik-merah" aria-hidden="true"></span>
+                <span>Episode 1: To You, in 2000 Years</span>
+                <div class="grup-kualitas">
+                  <span class="info-kualitas">4K UHD</span>
+                  <span class="info-kualitas">Sub Indo</span>
+                </div>
+              </div>
+
+              <div class="aksi-pemutar">
+                <a href="../../index.html" class="tombol tombol-abu tombol-ringkas">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+                  </svg>
+                  <span>Simpan</span>
+                </a>
+                <a href="../subscription.html" class="tombol tombol-merah tombol-ringkas">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M12 4v11m0 0l-4-4m4 4l4-4"></path>
+                    <path d="M5 19h14"></path>
+                  </svg>
+                  <span>Unduh VIP</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <aside class="panel-episode" aria-label="Daftar episode">
+            <div class="kepala-episode">
+              <h2 class="judul-panel-ep">Daftar Episode</h2>
+              <span class="info-panel-ep">1 / 12 Episode</span>
+            </div>
+
+            <div class="grid-nomor-ep" role="group" aria-label="Pilih nomor episode">
+              <a href="#pemutar-video" class="nomor-ep aktif" aria-current="page">01</a>
+              <a href="#pemutar-video" class="nomor-ep">02</a>
+              <a href="#pemutar-video" class="nomor-ep">03</a>
+              <a href="#pemutar-video" class="nomor-ep">04</a>
+              <a href="#pemutar-video" class="nomor-ep">05</a>
+              <a href="#pemutar-video" class="nomor-ep">06</a>
+              <a href="../subscription.html" class="nomor-ep" aria-label="Episode 07 VIP">
+                <span>07</span>
+                <span class="tag-vip-ep">VIP</span>
+              </a>
+              <a href="../subscription.html" class="nomor-ep" aria-label="Episode 08 VIP">
+                <span>08</span>
+                <span class="tag-vip-ep">VIP</span>
+              </a>
+              <a href="../subscription.html" class="nomor-ep" aria-label="Episode 09 VIP">
+                <span>09</span>
+                <span class="tag-vip-ep">VIP</span>
+              </a>
+              <a href="../subscription.html" class="nomor-ep" aria-label="Episode 10 VIP">
+                <span>10</span>
+                <span class="tag-vip-ep">VIP</span>
+              </a>
+              <a href="../subscription.html" class="nomor-ep" aria-label="Episode 11 VIP">
+                <span>11</span>
+                <span class="tag-vip-ep">VIP</span>
+              </a>
+              <a href="../subscription.html" class="nomor-ep" aria-label="Episode 12 VIP">
+                <span>12</span>
+                <span class="tag-vip-ep">VIP</span>
+              </a>
+            </div>
+
+            <div class="daftar-episode">
+              <a href="#pemutar-video" class="item-episode aktif" aria-current="page">
+                <div class="thumb-episode">
+                  <img src="../../assets/images/movies/genre_aksi/attack_on_titan.jpeg" alt="">
+                  <span class="nomor-thumb">EP 01</span>
+                </div>
+                <div class="teks-episode">
+                  <span class="judul-episode">1. To You, in 2000 Years</span>
+                  <span class="durasi-episode">Sedang diputar &bull; 24 Menit &bull; Gratis</span>
+                </div>
+              </a>
+
+              <a href="#pemutar-video" class="item-episode">
+                <div class="thumb-episode">
+                  <img src="../../assets/images/movies/genre_aksi/attack_on_titan.jpeg" alt="" loading="lazy">
+                  <span class="nomor-thumb">EP 02</span>
+                </div>
+                <div class="teks-episode">
+                  <span class="judul-episode">2. That Day: The Fall of Shiganshina</span>
+                  <span class="durasi-episode">24 Menit &bull; Gratis</span>
+                </div>
+              </a>
+
+              <a href="#pemutar-video" class="item-episode">
+                <div class="thumb-episode">
+                  <img src="../../assets/images/movies/genre_aksi/attack_on_titan.jpeg" alt="" loading="lazy">
+                  <span class="nomor-thumb">EP 03</span>
+                </div>
+                <div class="teks-episode">
+                  <span class="judul-episode">3. A Dim Light Amid Despair</span>
+                  <span class="durasi-episode">24 Menit &bull; Gratis</span>
+                </div>
+              </a>
+
+              <a href="#pemutar-video" class="item-episode">
+                <div class="thumb-episode">
+                  <img src="../../assets/images/movies/genre_aksi/attack_on_titan.jpeg" alt="" loading="lazy">
+                  <span class="nomor-thumb">EP 04</span>
+                </div>
+                <div class="teks-episode">
+                  <span class="judul-episode">4. The Night of the Closing Ceremony</span>
+                  <span class="durasi-episode">24 Menit &bull; Gratis</span>
+                </div>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="seksi-detail" aria-labelledby="judul-tonton">
+      <div class="wadah">
+        <div class="grid-detail">
+          <div class="kolom-utama-detail">
+            <h1 id="judul-tonton" class="judul-tonton">Attack On Titan</h1>
+
+            <div class="baris-meta-tonton">
+              <span class="lencana-orisinal">Pilihan</span>
+              <span class="lencana-baru">Trailer Resmi</span>
+              <span class="skor-inline">&#9733; 9.2</span>
+              <span class="pemisah-detail">|</span>
+              <span>2023</span>
+              <span class="pemisah-detail">|</span>
+              <span>17+</span>
+              <span class="pemisah-detail">|</span>
+              <span>12 Episode</span>
+            </div>
+
+            <div class="daftar-tag-detail">
+              <a href="../catalog/catalog-film.html" class="tag-detail">Aksi</a>
+              <a href="../catalog/catalog-anime.html" class="tag-detail">Anime</a>
+              <a href="../catalog/catalog-film.html" class="tag-detail">Petualangan</a>
+            </div>
+
+            <div class="sinopsis-lengkap">
+              <p>Setelah tembok pelindung kota ditembus oleh Titan raksasa, Eren Yeager bersumpah membasmi seluruh Titan demi kebebasan umat manusia.</p>
+            </div>
+
+            <h2 class="subjudul-bagian">Pemeran Utama</h2>
+            <div class="grid-pemeran">
+              <div class="kartu-pemeran">
+                <img src="../../assets/images/profile.jpg" alt="Foto Yuki Kaji" class="foto-pemeran">
+                <div class="info-pemeran">
+                  <p class="nama-pemeran">Yuki Kaji</p>
+                  <p class="peran-pemeran">sebagai Eren Yeager</p>
+                </div>
+              </div>
+
+              <div class="kartu-pemeran">
+                <img src="../../assets/images/profile.jpg" alt="Foto Yui Ishikawa" class="foto-pemeran">
+                <div class="info-pemeran">
+                  <p class="nama-pemeran">Yui Ishikawa</p>
+                  <p class="peran-pemeran">sebagai Mikasa Ackerman</p>
+                </div>
+              </div>
+
+              <div class="kartu-pemeran">
+                <img src="../../assets/images/profile.jpg" alt="Foto Marina Inoue" class="foto-pemeran">
+                <div class="info-pemeran">
+                  <p class="nama-pemeran">Marina Inoue</p>
+                  <p class="peran-pemeran">sebagai Armin Arlert</p>
+                </div>
+              </div>
+
+              <div class="kartu-pemeran">
+                <img src="../../assets/images/profile.jpg" alt="Foto Daisuke Ono" class="foto-pemeran">
+                <div class="info-pemeran">
+                  <p class="nama-pemeran">Daisuke Ono</p>
+                  <p class="peran-pemeran">sebagai Erwin Smith</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="kolom-samping-detail" aria-label="Informasi teknis dan langganan">
+            <div class="kotak-panel kartu-spesifikasi">
+              <h2 class="judul-samping-detail">Informasi Tayangan</h2>
+              <div class="baris-spek">
+                <span class="label-spek">Sutradara</span>
+                <span class="nilai-spek">Tetsuro Araki</span>
+              </div>
+              <div class="baris-spek">
+                <span class="label-spek">Studio</span>
+                <span class="nilai-spek">Wit Studio</span>
+              </div>
+              <div class="baris-spek">
+                <span class="label-spek">Tahun Rilis</span>
+                <span class="nilai-spek">2023</span>
+              </div>
+              <div class="baris-spek">
+                <span class="label-spek">Kualitas</span>
+                <span class="nilai-spek">Full HD &amp; 4K UHD</span>
+              </div>
+              <div class="baris-spek">
+                <span class="label-spek">Audio</span>
+                <span class="nilai-spek">Bahasa Asli &amp; Indonesia</span>
+              </div>
+              <div class="baris-spek">
+                <span class="label-spek">Subtitel</span>
+                <span class="nilai-spek">Indonesia, Inggris</span>
+              </div>
+            </div>
+
+            <div class="kartu-promo-vip">
+              <h2 class="judul-promo-vip">Akses Semua Episode Lebih Cepat</h2>
+              <p class="teks-promo-vip">Aktifkan paket VIP untuk menikmati tayangan lengkap dalam kualitas 4K UHD tanpa jeda iklan.</p>
+              <a href="../subscription.html" class="tombol tombol-merah">Gabung VIP Sekarang</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="seksi-ulasan" aria-labelledby="judul-ulasan">
+      <div class="wadah">
+        <div class="kepala-baris">
+          <h2 id="judul-ulasan" class="judul-baris">Ulasan Penonton</h2>
+          <span class="info-panel-ep">22.100 Penilaian</span>
+        </div>
+
+        <div class="grid-ulasan-atas">
+          <div class="kotak-panel kotak-skor">
+            <div>
+              <div class="skor-besar">
+                <span class="angka-skor">9.2</span>
+                <span class="maks-skor">/ 10</span>
+              </div>
+              <p class="bintang-skor" aria-label="Skor rata-rata tinggi">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+              <p class="total-penilai">Dari 22.100 ulasan penonton</p>
+            </div>
+
+            <div class="daftar-bar-skor">
+              <div class="baris-bar">
+                <span class="label-bintang">5 &#9733;</span>
+                <div class="jalur-bar"><span class="isi-bar bar-80"></span></div>
+                <span class="persen-bar">80%</span>
+              </div>
+              <div class="baris-bar">
+                <span class="label-bintang">4 &#9733;</span>
+                <div class="jalur-bar"><span class="isi-bar bar-14"></span></div>
+                <span class="persen-bar">14%</span>
+              </div>
+              <div class="baris-bar">
+                <span class="label-bintang">3 &#9733;</span>
+                <div class="jalur-bar"><span class="isi-bar bar-4"></span></div>
+                <span class="persen-bar">4%</span>
+              </div>
+              <div class="baris-bar">
+                <span class="label-bintang">2 &#9733;</span>
+                <div class="jalur-bar"><span class="isi-bar bar-1"></span></div>
+                <span class="persen-bar">1%</span>
+              </div>
+              <div class="baris-bar">
+                <span class="label-bintang">1 &#9733;</span>
+                <div class="jalur-bar"><span class="isi-bar bar-1"></span></div>
+                <span class="persen-bar">1%</span>
+              </div>
+            </div>
+          </div>
+
+          <form action="../../index.html" method="get" class="kotak-panel form-ulasan">
+            <div>
+              <h3 class="judul-form-ulasan">Tulis Ulasan Tayangan Ini</h3>
+
+              <div class="grup-input">
+                <label for="rating-ulasan" class="label-input">Penilaian</label>
+                <select id="rating-ulasan" name="rating" class="input-gelap">
+                  <option value="5">5 Bintang - Sangat Bagus</option>
+                  <option value="4">4 Bintang - Bagus</option>
+                  <option value="3">3 Bintang - Cukup Menarik</option>
+                  <option value="2">2 Bintang - Biasa Saja</option>
+                  <option value="1">1 Bintang - Kurang Memuaskan</option>
+                </select>
+              </div>
+
+              <div class="grup-input">
+                <label for="teks-ulasan" class="label-input">Komentar</label>
+                <textarea id="teks-ulasan" name="ulasan" class="input-gelap" rows="3" placeholder="Tulis komentarmu tentang tayangan ini..." required></textarea>
+              </div>
+            </div>
+
+            <div class="baris-aksi-ulasan">
+              <span class="catatan-ulasan">Masuk akun untuk menyimpan riwayat ulasanmu.</span>
+              <button type="submit" class="tombol tombol-merah">Kirim Ulasan</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="grid-ulasan-kartu">
+          <article class="kotak-panel kartu-ulasan">
+            <div class="kepala-ulasan">
+              <div class="pengulas">
+                <img src="../../assets/images/profile.jpg" alt="" class="avatar-ulasan">
+                <div>
+                  <h3 class="nama-pengulas">Ilham Fauzi</h3>
+                  <p class="tanggal-ulasan">17 Nov 2026</p>
+                </div>
+              </div>
+              <span class="nilai-pengulas">&#9733; 9.4</span>
+            </div>
+            <p class="teks-ulasan">Episode 1 langsung membuat terpaku di kursi, ikonik sekali.</p>
+          </article>
+
+          <article class="kotak-panel kartu-ulasan">
+            <div class="kepala-ulasan">
+              <div class="pengulas">
+                <img src="../../assets/images/profile.jpg" alt="" class="avatar-ulasan">
+                <div>
+                  <h3 class="nama-pengulas">Putri Maharani</h3>
+                  <p class="tanggal-ulasan">13 Nov 2026</p>
+                </div>
+              </div>
+              <span class="nilai-pengulas">&#9733; 9.1</span>
+            </div>
+            <p class="teks-ulasan">Aksi manuver 3D Gear-nya luar biasa dinamis.</p>
+          </article>
+
+          <article class="kotak-panel kartu-ulasan">
+            <div class="kepala-ulasan">
+              <div class="pengulas">
+                <img src="../../assets/images/profile.jpg" alt="" class="avatar-ulasan">
+                <div>
+                  <h3 class="nama-pengulas">Yoga Pratama</h3>
+                  <p class="tanggal-ulasan">10 Nov 2026</p>
+                </div>
+              </div>
+              <span class="nilai-pengulas">&#9733; 9.0</span>
+            </div>
+            <p class="teks-ulasan">Awal mula kisah epik yang tak pernah membosankan ditonton ulang.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="baris-konten" aria-labelledby="judul-serupa">
+      <div class="wadah">
+        <div class="kepala-baris">
+          <h2 id="judul-serupa" class="judul-baris">Tayangan Serupa</h2>
+          <a href="../catalog.html" class="tautan-semua" aria-label="Lihat semua tayangan serupa">
+            <span>Lainnya</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <div class="grid-kartu">
+          <a href="the-odyssey.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="../../assets/images/movies/genre_aksi/the_odyssey.png" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+                </svg>
+              </span>
+              <span class="lencana-genre">Aksi</span>
+            </div>
+            <h3 class="judul-poster">The Odyssey</h3>
+          </a>
+
+          <a href="aot-final-season.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="../../assets/images/movies/genre_aksi/aot_final_season.png" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+                </svg>
+              </span>
+              <span class="lencana-genre">Aksi</span>
+            </div>
+            <h3 class="judul-poster">Attack On Titan: The Final Season</h3>
+          </a>
+
+          <a href="teach-you-a-lesson.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="../../assets/images/movies/genre_aksi/teach_you_a_lesson.png" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+                </svg>
+              </span>
+              <span class="lencana-genre">Aksi</span>
+            </div>
+            <h3 class="judul-poster">Teach You A Lesson</h3>
+          </a>
+
+          <a href="jujutsu-kaisen.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="../../assets/images/movies/genre_aksi/jujutsu_kaisen_anime.png" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+                </svg>
+              </span>
+              <span class="lencana-genre">Aksi</span>
+            </div>
+            <h3 class="judul-poster">Jujutsu Kaisen</h3>
+          </a>
+
+          <a href="spy-family.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="../../assets/images/movies/genre_aksi/spy_family_anime.png" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+                </svg>
+              </span>
+              <span class="lencana-genre">Aksi</span>
+            </div>
+            <h3 class="judul-poster">SPY x Family</h3>
+          </a>
+
+          <a href="spiderman-brand-new-day.html" class="kartu-poster">
+            <div class="kotak-poster">
+              <img src="../../assets/images/movies/genre_aksi/spiderman_brand_new_day.jpg" alt="" loading="lazy">
+              <span class="lencana-simpan" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h12v16l-6-4-6 4V4z"></path>
+                </svg>
+              </span>
+              <span class="lencana-genre">Aksi</span>
+            </div>
+            <h3 class="judul-poster">Spider-Man Brand New Day</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-utama">
+    <div class="wadah">
+      <div class="komunitas-footer">
+        <h2 class="judul-komunitas">Nikmati Pengalaman Menonton Terbaik</h2>
+        <p class="subjudul-komunitas">Ikuti <span class="teks-sorot">Watchana</span> untuk info rilis film dan serial terbaru</p>
+
+        <div class="daftar-sosial">
+          <a href="https://t.me/" target="_blank" rel="noopener noreferrer" class="tombol-sosial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M21 5L3 12l6.5 2.4L18 7l-6.2 8.7 5.7 3.8L21 5z"></path>
+            </svg>
+            <span>Telegram</span>
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="tombol-sosial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <rect x="3" y="6" width="18" height="12" rx="3"></rect>
+              <polygon points="10,9.5 15.5,12 10,14.5" fill="currentColor" stroke="none"></polygon>
+            </svg>
+            <span>YouTube</span>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="tombol-sosial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+              <circle cx="12" cy="12" r="3.5"></circle>
+            </svg>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="grid-footer">
+        <div class="kolom-footer">
+          <h3>Tentang Watchana</h3>
+          <ul class="daftar-link-footer">
+            <li><a href="../home.html#utama">Beranda</a></li>
+            <li><a href="../catalog.html#judul-katalog">Katalog Film</a></li>
+            <li><a href="../watch.html#judul-tonton">Pemutar Video</a></li>
+            <li><a href="../subscription.html#judul-langganan">Paket Langganan</a></li>
+          </ul>
+        </div>
+
+        <div class="kolom-footer">
+          <h3>Kategori</h3>
+          <ul class="daftar-link-footer">
+            <li><a href="../home.html#judul-terbaru">Rilis Terbaru</a></li>
+            <li><a href="../home.html#judul-populer">Film Populer</a></li>
+            <li><a href="../home.html#judul-anime">Anime Pilihan</a></li>
+            <li><a href="../home.html#judul-serial">Serial TV Terbaik</a></li>
+          </ul>
+        </div>
+
+        <div class="kolom-footer">
+          <h3>Bantuan</h3>
+          <ul class="daftar-link-footer">
+            <li><a href="../../index.html#utama">Masuk Akun</a></li>
+            <li><a href="../subscription.html#form-langganan">Cara Berlangganan</a></li>
+            <li><a href="../history.html#utama">Riwayat Tontonan</a></li>
+            <li><a href="../subscription.html#judul-faq">Pertanyaan Umum</a></li>
+          </ul>
+        </div>
+
+        <div class="kolom-footer">
+          <h3>Layanan</h3>
+          <ul class="daftar-link-footer">
+            <li><a href="../subscription.html#kebijakan-privasi">Kebijakan Privasi</a></li>
+            <li><a href="../subscription.html#syarat-penggunaan">Syarat Penggunaan</a></li>
+          </ul>
+        </div>
+
+        <a href="#utama" class="pil-bahasa" aria-label="Bahasa Indonesia aktif - Kembali ke atas">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M3 12h18M12 3c2.8 2.6 4.2 5.6 4.2 9s-1.4 6.4-4.2 9c-2.8-2.6-4.2-5.6-4.2-9S9.2 5.6 12 3z"></path>
+          </svg>
+          <span>Bahasa Indonesia</span>
+        </a>
+      </div>
+
+      <div class="bawah-footer">
+        <p>Hak Cipta &copy; 2026 Watchana. Seluruh hak dilindungi.</p>
+        <p>Platform streaming hiburan karya <strong>Tim Jujur Janggal</strong>.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
