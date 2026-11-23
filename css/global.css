@@ -320,6 +320,7 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
   transition: transform 0.3s ease;
 }
 
@@ -751,6 +752,123 @@ ol {
 
   .grid-footer {
     grid-template-columns: 1fr;
+  }
+}
+
+/* modal pemutar trailer tanpa javascript */
+.modal-video {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-video:target {
+  display: flex;
+}
+
+.latar-modal-video {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(8, 10, 12, 0.88);
+  backdrop-filter: blur(6px);
+}
+
+.kotak-modal-video {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 920px;
+  border-radius: var(--radius-sedang);
+  background-color: var(--bg-kartu);
+  border: 1px solid var(--garis-sedang);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+}
+
+.kepala-modal-video {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--garis-tipis);
+}
+
+.judul-modal-video {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--teks-utama);
+}
+
+.aksi-modal-video {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.tautan-tonton-penuh {
+  padding: 6px 12px;
+  border-radius: var(--radius-kecil);
+  background-color: var(--warna-utama);
+  color: var(--teks-utama);
+  font-size: 0.78rem;
+  font-weight: 600;
+  transition: background-color var(--transisi);
+}
+
+.tautan-tonton-penuh:hover {
+  background-color: var(--warna-utama-hover);
+}
+
+.tutup-modal-video {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-kecil);
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--teks-utama);
+  font-size: 1.25rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transisi);
+}
+
+.tutup-modal-video:hover {
+  background-color: var(--warna-utama);
+}
+
+.bingkai-modal-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #000000;
+}
+
+.bingkai-modal-video video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #000000;
+}
+
+@media (max-width: 539px) {
+  .modal-video {
+    padding: 12px;
+  }
+
+  .kepala-modal-video {
+    padding: 12px 14px;
+  }
+
+  .judul-modal-video {
+    font-size: 0.92rem;
   }
 }
 
